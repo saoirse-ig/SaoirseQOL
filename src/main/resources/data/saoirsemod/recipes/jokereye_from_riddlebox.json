@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "saoirsemod:riddlebox"
+    }
+  ],
+  "result": {
+    "item": "saoirsemod:jokereye",
+    "count": 9
+  }
+}

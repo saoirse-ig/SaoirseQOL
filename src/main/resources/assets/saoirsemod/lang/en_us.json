@@ -1,3 +1,7 @@
 {
-  "item.saoirsemod.joker_eye": "Eye of The Joker"
+  "item.saoirsemod.jokereye": "Eye of The Joker",
+
+  "block.saoirsemod.riddlebox": "Riddle Box",
+
+  "creativetab.tdc_tab": "The Dark Carnival"
 }

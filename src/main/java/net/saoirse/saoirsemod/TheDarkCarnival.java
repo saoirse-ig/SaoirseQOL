@@ -12,6 +12,8 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.saoirse.saoirsemod.block.ModBlocks;
+import net.saoirse.saoirsemod.item.ModCreativeModTabs;
 import net.saoirse.saoirsemod.item.ModItems;
 import org.slf4j.Logger;
 
@@ -26,12 +28,11 @@ public class TheDarkCarnival
     public TheDarkCarnival(FMLJavaModLoadingContext context)
     {
         IEventBus modEventBus = context.getModEventBus();
-/*
+
         ModCreativeModTabs.register(modEventBus);
         ModBlocks.register(modEventBus);
-
- */
         ModItems.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
@@ -44,9 +45,6 @@ public class TheDarkCarnival
 
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
-            event.accept(ModItems.JOKER_EYE);
-        }
     }
 
     @SubscribeEvent
