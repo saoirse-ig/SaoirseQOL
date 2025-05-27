@@ -20,6 +20,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
 
         simpleItem(ModItems.JOKER_EYE);
+        simpleItem(ModItems.PAGAN_SEEDS);
 
     }
 

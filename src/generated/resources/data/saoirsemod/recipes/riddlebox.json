@@ -1,18 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "pattern": [
-    "###",
-    "###",
-    "###"
-  ],
   "key": {
     "#": {
       "item": "saoirsemod:jokereye"
     }
   },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
   "result": {
-    "item": "saoirsemod:riddlebox",
-    "count": 1
-  }
+    "item": "saoirsemod:riddlebox"
+  },
+  "show_notification": true
 }

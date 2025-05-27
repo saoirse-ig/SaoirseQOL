@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "TheDarkCarnival:riddlebox"
+          "name": "saoirsemod:riddlebox"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "TheDarkCarnival:blocks/riddlebox"
+  "random_sequence": "saoirsemod:blocks/riddlebox"
 }
