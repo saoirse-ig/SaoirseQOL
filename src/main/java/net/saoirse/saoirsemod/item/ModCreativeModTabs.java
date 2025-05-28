@@ -22,10 +22,22 @@ public class ModCreativeModTabs {
 
                         //ITEMS
                         pOutput.accept(ModItems.JOKER_EYE.get());
+                        pOutput.accept(ModItems.PAGAN_SEEDS.get());
+                        pOutput.accept(ModItems.PAGAN_DUST.get());
+
 
 
                         //BLOCKS
                         pOutput.accept(ModBlocks.RIDDLE_BOX.get());
+
+                        pOutput.accept(ModBlocks.PAGAN_LOG.get());
+                        pOutput.accept(ModBlocks.STRIPPED_PAGAN_LOG.get());
+                        pOutput.accept(ModBlocks.PAGAN_WOOD.get());
+                        pOutput.accept(ModBlocks.STRIPPED_PAGAN_WOOD.get());
+                        pOutput.accept(ModBlocks.PAGAN_PLANKS.get());
+                        pOutput.accept(ModBlocks.PAGAN_LEAVES.get());
+
+
                     }).build());
 
 

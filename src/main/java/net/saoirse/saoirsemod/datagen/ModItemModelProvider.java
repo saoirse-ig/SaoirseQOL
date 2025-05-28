@@ -21,6 +21,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         simpleItem(ModItems.JOKER_EYE);
         simpleItem(ModItems.PAGAN_SEEDS);
+        simpleItem(ModItems.PAGAN_DUST);
 
     }
 

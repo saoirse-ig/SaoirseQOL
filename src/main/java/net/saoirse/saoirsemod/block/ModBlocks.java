@@ -1,16 +1,22 @@
 package net.saoirse.saoirsemod.block;
 
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.LeavesBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.saoirse.saoirsemod.TheDarkCarnival;
+import net.saoirse.saoirsemod.block.custom.ModFlammableRotatedPillarBlock;
 import net.saoirse.saoirsemod.item.ModItems;
 import org.lwjgl.system.SharedLibrary;
 
@@ -24,11 +30,69 @@ public class ModBlocks {
                     TheDarkCarnival.MOD_ID);
 
 
-    //holds properties of IRON_BLOCK except for sound, which is copying COPPER_BLOCK
+    //holds properties of IRON_BLOCK except for sound,
+    // which is copying COPPER_BLOCK
     public static final RegistryObject<Block> RIDDLE_BOX = registerBlock
             ("riddlebox", () -> new
                     Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
                     .sound(SoundType.COPPER)));
+
+
+    public static final RegistryObject<Block> PAGAN_LOG = registerBlock
+            ("pagan_log", () -> new
+                    ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)
+                    .strength(3f)));
+    public static final RegistryObject<Block> PAGAN_WOOD = registerBlock
+            ("pagan_wood", () -> new
+                    ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)
+                    .strength(3f)));
+    public static final RegistryObject<Block> STRIPPED_PAGAN_LOG = registerBlock
+            ("stripped_pagan_log", () -> new
+                    ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)
+                    .strength(3f)));
+    public static final RegistryObject<Block> STRIPPED_PAGAN_WOOD = registerBlock
+            ("stripped_pagan_wood", () -> new
+                    ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)
+                    .strength(3f)));
+
+    public static final RegistryObject<Block> PAGAN_LEAVES = registerBlock
+            ("pagan_leaves", () -> new
+                    Block(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)){
+                        @Override
+                        public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                            return true;
+                        }
+
+                        @Override
+                        public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                            return 20;
+                        }
+
+                        @Override
+                        public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                            return 5;
+                        }
+                    });
+
+    public static final RegistryObject<Block> PAGAN_PLANKS = registerBlock
+            ("pagan_planks", () -> new
+                    LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)){
+                        @Override
+                        public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                            return true;
+                        }
+
+                        @Override
+                        public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                            return 60;
+                        }
+
+                        @Override
+                        public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                            return 30;
+                        }
+                    });
+
 
     private static <T extends Block> RegistryObject<T> registerBlock
             (String name, Supplier<T> block){

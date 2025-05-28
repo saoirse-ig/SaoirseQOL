@@ -20,6 +20,9 @@ public class ModItems {
     public static final RegistryObject<Item> PAGAN_SEEDS =
             ITEMS.register("pagan_seeds",
                     () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> PAGAN_DUST =
+            ITEMS.register("pagan_dust",
+                    () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

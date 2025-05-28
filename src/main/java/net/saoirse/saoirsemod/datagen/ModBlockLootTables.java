@@ -17,8 +17,16 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
-        this.dropSelf(ModBlocks.RIDDLE_BOX.get());
 
+        this.dropSelf(ModBlocks.RIDDLE_BOX.get());
+        this.dropSelf(ModBlocks.PAGAN_LOG.get());
+        this.dropSelf(ModBlocks.PAGAN_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_PAGAN_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_PAGAN_LOG.get());
+        this.dropSelf(ModBlocks.PAGAN_PLANKS.get());
+
+        this.add(ModBlocks.PAGAN_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.RIDDLE_BOX.get(), NORMAL_LEAVES_SAPLING_CHANCES)); //change riddlebox to sapling
 
 
         //ore implementation
