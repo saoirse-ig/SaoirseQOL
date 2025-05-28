@@ -1,2 +1,8 @@
-// 1.20.1	2025-05-27T01:22:37.9815921	Loot Tables
+// 1.20.1	2025-05-27T22:52:30.1534029	Loot Tables
+581880a7f6599d4b6cb3369916208d75f4636a90 data/saoirsemod/loot_tables/blocks/pagan_leaves.json
+a3679c72da9d90281090678ac7d333fa1d9613b4 data/saoirsemod/loot_tables/blocks/pagan_log.json
+f8cbbce0749fcf7e147cc4417c8100220f0cf8cc data/saoirsemod/loot_tables/blocks/pagan_planks.json
+f9cc85a491d97bccf6e3a3c29c6042836605cb2d data/saoirsemod/loot_tables/blocks/pagan_wood.json
 7d75e2c1abeef782203b72e1d420b3054ee1f23d data/saoirsemod/loot_tables/blocks/riddlebox.json
+dd6a71e81dac671f70ca3891154909d6f6665ed8 data/saoirsemod/loot_tables/blocks/stripped_pagan_log.json
+1041d025e4c9569d3b7d17b9f798c621bd24810a data/saoirsemod/loot_tables/blocks/stripped_pagan_wood.json
