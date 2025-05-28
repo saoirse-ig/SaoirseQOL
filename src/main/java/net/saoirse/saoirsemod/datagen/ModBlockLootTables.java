@@ -19,6 +19,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     protected void generate() {
 
         this.dropSelf(ModBlocks.RIDDLE_BOX.get());
+
+        this.dropSelf(ModBlocks.PAGAN_SAPLING.get());
         this.dropSelf(ModBlocks.PAGAN_LOG.get());
         this.dropSelf(ModBlocks.PAGAN_WOOD.get());
         this.dropSelf(ModBlocks.STRIPPED_PAGAN_WOOD.get());
@@ -26,7 +28,18 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.PAGAN_PLANKS.get());
 
         this.add(ModBlocks.PAGAN_LEAVES.get(), block ->
-                createLeavesDrops(block, ModBlocks.RIDDLE_BOX.get(), NORMAL_LEAVES_SAPLING_CHANCES)); //change riddlebox to sapling
+                createLeavesDrops(block, ModBlocks.PAGAN_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES)); //change riddlebox to sapling
+
+
+        this.dropSelf(ModBlocks.PAGAN_T2_SAPLING.get());
+        this.dropSelf(ModBlocks.PAGAN_T2_LOG.get());
+        this.dropSelf(ModBlocks.PAGAN_T2_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_PAGAN_T2_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_PAGAN_T2_LOG.get());
+        this.dropSelf(ModBlocks.PAGAN_T2_PLANKS.get());
+
+        this.add(ModBlocks.PAGAN_T2_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.PAGAN_T2_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES)); //change riddlebox to sapling
 
 
         //ore implementation

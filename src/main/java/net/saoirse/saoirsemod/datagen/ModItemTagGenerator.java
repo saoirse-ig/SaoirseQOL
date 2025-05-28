@@ -26,10 +26,15 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.PAGAN_LOG.get().asItem())
                 .add(ModBlocks.PAGAN_WOOD.get().asItem())
                 .add(ModBlocks.STRIPPED_PAGAN_WOOD.get().asItem())
-                .add(ModBlocks.STRIPPED_PAGAN_LOG.get().asItem());
+                .add(ModBlocks.STRIPPED_PAGAN_LOG.get().asItem())
+                .add(ModBlocks.PAGAN_T2_LOG.get().asItem())
+                .add(ModBlocks.PAGAN_T2_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_PAGAN_T2_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_PAGAN_T2_LOG.get().asItem());
 
         this.tag(ItemTags.PLANKS)
-                .add(ModBlocks.PAGAN_PLANKS.get().asItem());
+                .add(ModBlocks.PAGAN_PLANKS.get().asItem())
+                .add(ModBlocks.PAGAN_T2_PLANKS.get().asItem());
 
     }
 }

@@ -16,7 +16,7 @@ public class ModCreativeModTabs {
 
 
     public static final RegistryObject<CreativeModeTab> TDC_TAB = CREATIVE_MODE_TABS.register("tdc_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.JOKER_EYE.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.PAGAN_DUST.get()))
                     .title(Component.translatable("creativetab.tdc_tab"))
                     .displayItems((pParameters, pOutput) -> {
 
@@ -36,6 +36,13 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.STRIPPED_PAGAN_WOOD.get());
                         pOutput.accept(ModBlocks.PAGAN_PLANKS.get());
                         pOutput.accept(ModBlocks.PAGAN_LEAVES.get());
+
+                        pOutput.accept(ModBlocks.PAGAN_T2_LOG.get());
+                        pOutput.accept(ModBlocks.STRIPPED_PAGAN_T2_LOG.get());
+                        pOutput.accept(ModBlocks.PAGAN_T2_WOOD.get());
+                        pOutput.accept(ModBlocks.STRIPPED_PAGAN_T2_WOOD.get());
+                        pOutput.accept(ModBlocks.PAGAN_T2_PLANKS.get());
+                        pOutput.accept(ModBlocks.PAGAN_T2_LEAVES.get());
 
 
                     }).build());

@@ -5,12 +5,21 @@
 
   "block.saoirsemod.riddlebox": "Riddle Box",
 
+  "block.saoirsemod.pagan_sapling": "Féth Fíada Sapling",
   "block.saoirsemod.pagan_log": "Féth Fíada Log",
   "block.saoirsemod.stripped_pagan_log": "Stripped Féth Fíada Log",
   "block.saoirsemod.pagan_wood": "Féth Fíada Wood",
   "block.saoirsemod.stripped_pagan_wood": "Stripped Féth Fíada Wood",
   "block.saoirsemod.pagan_leaves": "Féth Fíada Leaves",
   "block.saoirsemod.pagan_planks": "Féth Fíada Planks",
+
+  "block.saoirsemdo.pagan_t2_sapling": "Ériu’s Spine Sapling",
+  "block.saoirsemod.pagan_t2_log": "Ériu’s Spine Log",
+  "block.saoirsemod.stripped_pagan_t2_log": "Stripped Ériu’s Spine Log",
+  "block.saoirsemod.pagan_t2_wood": "Ériu’s Spine Wood",
+  "block.saoirsemod.stripped_pagan_t2_wood": "Stripped Ériu’s Spine Wood",
+  "block.saoirsemod.pagan_t2_leaves": "Ériu’s Spine Leaves",
+  "block.saoirsemod.pagan_t2_planks": "Ériu’s Spine Spine Planks",
 
   "creativetab.tdc_tab": "The Dark Carnival"
 }

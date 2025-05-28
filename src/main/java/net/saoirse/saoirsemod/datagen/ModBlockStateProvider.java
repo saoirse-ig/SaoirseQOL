@@ -22,6 +22,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels(){
         blockWithItem(ModBlocks.RIDDLE_BOX);
 
+
+
         logBlock(((RotatedPillarBlock) ModBlocks.PAGAN_LOG.get()));
         axisBlock(((RotatedPillarBlock) ModBlocks.PAGAN_WOOD.get()),
                 blockTexture(ModBlocks.PAGAN_LOG.get()),
@@ -29,7 +31,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_PAGAN_LOG.get()),
                 blockTexture(ModBlocks.STRIPPED_PAGAN_LOG.get()),
-                ResourceLocation.fromNamespaceAndPath(TheDarkCarnival.MOD_ID, "block/stripped_pagan_log_top"));
+                ResourceLocation.fromNamespaceAndPath(TheDarkCarnival.MOD_ID,
+                        "block/stripped_pagan_log_top"));
 
         axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_PAGAN_WOOD.get()),
                 blockTexture(ModBlocks.STRIPPED_PAGAN_LOG.get()),
@@ -43,6 +46,33 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         blockWithItem(ModBlocks.PAGAN_PLANKS);
         leavesBlock(ModBlocks.PAGAN_LEAVES);
+        saplingBlock(ModBlocks.PAGAN_SAPLING);
+
+
+
+        logBlock(((RotatedPillarBlock) ModBlocks.PAGAN_T2_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.PAGAN_T2_WOOD.get()),
+                blockTexture(ModBlocks.PAGAN_T2_LOG.get()),
+                blockTexture(ModBlocks.PAGAN_T2_LOG.get()));
+
+        axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_PAGAN_T2_LOG.get()),
+                blockTexture(ModBlocks.STRIPPED_PAGAN_T2_LOG.get()),
+                ResourceLocation.fromNamespaceAndPath(TheDarkCarnival.MOD_ID,
+                        "block/stripped_pagan_t2_log_top"));
+
+        axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_PAGAN_T2_WOOD.get()),
+                blockTexture(ModBlocks.STRIPPED_PAGAN_T2_LOG.get()),
+                blockTexture(ModBlocks.STRIPPED_PAGAN_T2_LOG.get()));
+
+
+        blockItem(ModBlocks.PAGAN_T2_LOG);
+        blockItem(ModBlocks.PAGAN_T2_WOOD);
+        blockItem(ModBlocks.STRIPPED_PAGAN_T2_LOG);
+        blockItem(ModBlocks.STRIPPED_PAGAN_T2_WOOD);
+
+        blockWithItem(ModBlocks.PAGAN_T2_PLANKS);
+        leavesBlock(ModBlocks.PAGAN_T2_LEAVES);
+        saplingBlock(ModBlocks.PAGAN_T2_SAPLING);
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject){
@@ -55,7 +85,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
             ":block/" + ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath()));
     }
 
-    //CHECK THIS PLEASE
+    private void saplingBlock(RegistryObject<Block> blockRegistryObject){
+        simpleBlock(blockRegistryObject.get(),
+                models().cross(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(),
+                        blockTexture(blockRegistryObject.get())).renderType("cutout"));
+    }
+
     private void leavesBlock(RegistryObject<Block> blockRegistryObject){
         simpleBlockWithItem(blockRegistryObject.get(),
                 models().singleTexture(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(),

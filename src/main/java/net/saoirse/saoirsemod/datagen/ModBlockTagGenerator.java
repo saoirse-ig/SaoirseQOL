@@ -26,10 +26,15 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.PAGAN_LOG.get())
                 .add(ModBlocks.PAGAN_WOOD.get())
                 .add(ModBlocks.STRIPPED_PAGAN_LOG.get())
-                .add(ModBlocks.STRIPPED_PAGAN_WOOD.get());
+                .add(ModBlocks.STRIPPED_PAGAN_WOOD.get())
+                .add(ModBlocks.PAGAN_T2_LOG.get())
+                .add(ModBlocks.PAGAN_T2_WOOD.get())
+                .add(ModBlocks.STRIPPED_PAGAN_T2_LOG.get())
+                .add(ModBlocks.STRIPPED_PAGAN_T2_WOOD.get());
 
         this.tag(BlockTags.PLANKS)
-                .add(ModBlocks.PAGAN_LOG.get());
+                .add(ModBlocks.PAGAN_PLANKS.get())
+                .add(ModBlocks.PAGAN_T2_PLANKS.get());
 
 
     }
