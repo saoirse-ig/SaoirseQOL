@@ -22,6 +22,10 @@ public class ModItemTagGenerator extends ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
 
+        this.tag(ItemTags.LOGS)
+                .add(ModBlocks.PAGAN_LOG.get().asItem())
+                .add(ModBlocks.PAGAN_T2_LOG.get().asItem());
+
         this.tag(ItemTags.LOGS_THAT_BURN)
                 .add(ModBlocks.PAGAN_LOG.get().asItem())
                 .add(ModBlocks.PAGAN_WOOD.get().asItem())
@@ -31,6 +35,9 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.PAGAN_T2_WOOD.get().asItem())
                 .add(ModBlocks.STRIPPED_PAGAN_T2_WOOD.get().asItem())
                 .add(ModBlocks.STRIPPED_PAGAN_T2_LOG.get().asItem());
+
+        // don't add leaves/logs here
+
 
         this.tag(ItemTags.PLANKS)
                 .add(ModBlocks.PAGAN_PLANKS.get().asItem())

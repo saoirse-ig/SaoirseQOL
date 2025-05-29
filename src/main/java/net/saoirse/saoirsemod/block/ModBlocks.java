@@ -15,6 +15,7 @@ import net.minecraftforge.registries.RegistryObject;
 import net.saoirse.saoirsemod.TheDarkCarnival;
 import net.saoirse.saoirsemod.block.custom.ModFlammableRotatedPillarBlock;
 import net.saoirse.saoirsemod.item.ModItems;
+import net.saoirse.saoirsemod.worldgen.tree.PaganT2TreeGrower;
 import net.saoirse.saoirsemod.worldgen.tree.PaganTreeGrower;
 import org.lwjgl.system.SharedLibrary;
 
@@ -39,9 +40,6 @@ public class ModBlocks {
             () -> new SaplingBlock(
                     new PaganTreeGrower(),
                     BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)
-                            .noCollission()
-                            .randomTicks()
-                            .instabreak()
                             .sound(SoundType.GRASS)
             ));
 
@@ -104,11 +102,8 @@ public class ModBlocks {
     public static final RegistryObject<Block> PAGAN_T2_SAPLING = registerBlock(
             "pagan_t2_sapling",
             () -> new SaplingBlock(
-                    new PaganTreeGrower(), // DIFFERENT GROWER NEEDED ?
+                    new PaganT2TreeGrower(), // DIFFERENT GROWER NEEDED ?
                     BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)
-                            .noCollission()
-                            .randomTicks()
-                            .instabreak()
                             .sound(SoundType.GRASS)
             ));
 

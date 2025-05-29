@@ -19,21 +19,30 @@ import net.saoirse.saoirsemod.block.ModBlocks;
 
 public class ModConfiguredFeatures {
 
-    public static final ResourceKey<ConfiguredFeature<?, ?>> PAGAN_KEY = registerKey("pagan");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> PAGAN_KEY =
+            ResourceKey.create(Registries.CONFIGURED_FEATURE,
+                    ResourceLocation.fromNamespaceAndPath(TheDarkCarnival.MOD_ID, "pagan"));
+
+    public static final ResourceKey<ConfiguredFeature<?, ?>> PAGAN_T2_KEY =
+            ResourceKey.create(Registries.CONFIGURED_FEATURE,
+                    ResourceLocation.fromNamespaceAndPath(TheDarkCarnival.MOD_ID, "pagan_t2"));
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context){
-
         register(context, PAGAN_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.PAGAN_LOG.get()),
-
-                new StraightTrunkPlacer(5, 4, 3),
+                new StraightTrunkPlacer(5,4,3), //height randA randB
 
                 BlockStateProvider.simple(ModBlocks.PAGAN_LEAVES.get()),
-
                 new BlobFoliagePlacer(ConstantInt.of(3), ConstantInt.of(2), 3),
-
                 new TwoLayersFeatureSize(1, 0, 2)).build());
 
+                register(context, PAGAN_T2_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                        BlockStateProvider.simple(ModBlocks.PAGAN_T2_LOG.get()),
+                        new StraightTrunkPlacer(5,4,3), //height randA randB
+
+                        BlockStateProvider.simple(ModBlocks.PAGAN_T2_LEAVES.get()),
+                        new BlobFoliagePlacer(ConstantInt.of(3), ConstantInt.of(2), 3),
+                        new TwoLayersFeatureSize(1, 0, 2)).build());
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

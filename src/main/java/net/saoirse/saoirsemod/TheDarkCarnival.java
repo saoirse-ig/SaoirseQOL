@@ -15,6 +15,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.saoirse.saoirsemod.block.ModBlocks;
 import net.saoirse.saoirsemod.item.ModCreativeModTabs;
 import net.saoirse.saoirsemod.item.ModItems;
+import net.saoirse.saoirsemod.worldgen.ModConfiguredFeatures;
 import org.slf4j.Logger;
 
 @Mod(TheDarkCarnival.MOD_ID)
@@ -23,7 +24,8 @@ public class TheDarkCarnival
 
     public static final String MOD_ID = "saoirsemod";
 
-    private static final Logger LOGGER = LogUtils.getLogger();
+    //made private, public
+    public static final Logger LOGGER = LogUtils.getLogger();
 
     public TheDarkCarnival(FMLJavaModLoadingContext context)
     {

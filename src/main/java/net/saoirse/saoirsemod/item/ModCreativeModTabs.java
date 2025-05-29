@@ -44,6 +44,9 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.PAGAN_T2_PLANKS.get());
                         pOutput.accept(ModBlocks.PAGAN_T2_LEAVES.get());
 
+                        pOutput.accept(ModBlocks.PAGAN_SAPLING.get());
+                        pOutput.accept(ModBlocks.PAGAN_T2_SAPLING.get());
+
 
                     }).build());
 

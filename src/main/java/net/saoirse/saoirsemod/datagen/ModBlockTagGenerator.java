@@ -22,6 +22,10 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
 
+        this.tag(BlockTags.LOGS)
+                .add(ModBlocks.PAGAN_LOG.get())
+                .add(ModBlocks.PAGAN_T2_LOG.get());
+
         this.tag(BlockTags.LOGS_THAT_BURN)
                 .add(ModBlocks.PAGAN_LOG.get())
                 .add(ModBlocks.PAGAN_WOOD.get())
@@ -35,7 +39,6 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.PLANKS)
                 .add(ModBlocks.PAGAN_PLANKS.get())
                 .add(ModBlocks.PAGAN_T2_PLANKS.get());
-
 
     }
 }

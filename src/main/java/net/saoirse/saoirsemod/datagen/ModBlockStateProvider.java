@@ -11,7 +11,6 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.saoirse.saoirsemod.TheDarkCarnival;
 import net.saoirse.saoirsemod.block.ModBlocks;
-import net.saoirse.saoirsemod.block.custom.ModFlammableRotatedPillarBlock;
 
 public class ModBlockStateProvider extends BlockStateProvider {
     public ModBlockStateProvider(PackOutput output, ExistingFileHelper existingFileHelper){
@@ -22,7 +21,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels(){
         blockWithItem(ModBlocks.RIDDLE_BOX);
 
-
+//T1 PAGAN
 
         logBlock(((RotatedPillarBlock) ModBlocks.PAGAN_LOG.get()));
         axisBlock(((RotatedPillarBlock) ModBlocks.PAGAN_WOOD.get()),
@@ -48,7 +47,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         leavesBlock(ModBlocks.PAGAN_LEAVES);
         saplingBlock(ModBlocks.PAGAN_SAPLING);
 
-
+//T2 PAGAN
 
         logBlock(((RotatedPillarBlock) ModBlocks.PAGAN_T2_LOG.get()));
         axisBlock(((RotatedPillarBlock) ModBlocks.PAGAN_T2_WOOD.get()),
