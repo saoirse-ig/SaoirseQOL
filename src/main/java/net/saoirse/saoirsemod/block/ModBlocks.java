@@ -14,6 +14,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.saoirse.saoirsemod.TheDarkCarnival;
 import net.saoirse.saoirsemod.block.custom.ModFlammableRotatedPillarBlock;
+import net.saoirse.saoirsemod.block.custom.PaganCropBlock;
 import net.saoirse.saoirsemod.item.ModItems;
 import net.saoirse.saoirsemod.worldgen.tree.PaganT2TreeGrower;
 import net.saoirse.saoirsemod.worldgen.tree.PaganTreeGrower;
@@ -33,6 +34,14 @@ public class ModBlocks {
             ("riddlebox", () -> new
                     Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
                     .sound(SoundType.COPPER)));
+
+
+
+    // CROPS
+
+    public static final RegistryObject<Block> PAGAN_CROP = BLOCKS.register("pagan_crop",
+            () -> new PaganCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
+
 
 
     public static final RegistryObject<Block> PAGAN_SAPLING = registerBlock(

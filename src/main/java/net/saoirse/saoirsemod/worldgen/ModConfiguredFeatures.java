@@ -33,15 +33,15 @@ public class ModConfiguredFeatures {
                 new StraightTrunkPlacer(5,4,3), //height randA randB
 
                 BlockStateProvider.simple(ModBlocks.PAGAN_LEAVES.get()),
-                new BlobFoliagePlacer(ConstantInt.of(3), ConstantInt.of(2), 3),
-                new TwoLayersFeatureSize(1, 0, 2)).build());
+                new BlobFoliagePlacer(ConstantInt.of(4), ConstantInt.of(3), 4),
+                new TwoLayersFeatureSize(1, 0, 3)).build());
 
                 register(context, PAGAN_T2_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                         BlockStateProvider.simple(ModBlocks.PAGAN_T2_LOG.get()),
                         new StraightTrunkPlacer(5,4,3), //height randA randB
 
                         BlockStateProvider.simple(ModBlocks.PAGAN_T2_LEAVES.get()),
-                        new BlobFoliagePlacer(ConstantInt.of(3), ConstantInt.of(2), 3),
+                        new BlobFoliagePlacer(ConstantInt.of(4), ConstantInt.of(3), 4),
                         new TwoLayersFeatureSize(1, 0, 2)).build());
     }
 

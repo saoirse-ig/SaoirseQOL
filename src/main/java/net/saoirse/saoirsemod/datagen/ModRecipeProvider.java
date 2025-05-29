@@ -42,6 +42,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModBlocks.RIDDLE_BOX.get()), has(ModBlocks.RIDDLE_BOX.get()))
                 .save(pWriter);
 
+
+        // PAGAN DUST FROM PAGAN CROP YIELD !EDIT!
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PAGAN_DUST.get())
+                .pattern("##")
+                .pattern("##")
+                .define('#', ModItems.JOKER_EYE.get())
+                .unlockedBy(getHasName(ModItems.JOKER_EYE.get()), has(ModItems.JOKER_EYE.get()))
+                .save(pWriter);
+
     }
 
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {

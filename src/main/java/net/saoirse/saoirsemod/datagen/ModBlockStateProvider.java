@@ -3,14 +3,20 @@ package net.saoirse.saoirsemod.datagen;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.CropBlock;
 import net.minecraft.world.level.block.RotatedPillarBlock;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
+import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.saoirse.saoirsemod.TheDarkCarnival;
 import net.saoirse.saoirsemod.block.ModBlocks;
+import net.saoirse.saoirsemod.block.custom.PaganCropBlock;
+
+import java.util.function.Function;
 
 public class ModBlockStateProvider extends BlockStateProvider {
     public ModBlockStateProvider(PackOutput output, ExistingFileHelper existingFileHelper){
@@ -47,6 +53,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         leavesBlock(ModBlocks.PAGAN_LEAVES);
         saplingBlock(ModBlocks.PAGAN_SAPLING);
 
+        makePaganCrop((CropBlock)ModBlocks.PAGAN_CROP.get(),
+                "pagan_stage", "pagan_stage");
+
 //T2 PAGAN
 
         logBlock(((RotatedPillarBlock) ModBlocks.PAGAN_T2_LOG.get()));
@@ -72,6 +81,28 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.PAGAN_T2_PLANKS);
         leavesBlock(ModBlocks.PAGAN_T2_LEAVES);
         saplingBlock(ModBlocks.PAGAN_T2_SAPLING);
+    }
+
+    public void makePaganCrop(CropBlock block, String modelName, String textureName){
+        Function<BlockState, ConfiguredModel[]> function = state -> paganStates(
+                state, block, modelName, textureName);
+
+        getVariantBuilder(block).forAllStates(function);
+    }
+
+    private ConfiguredModel[] paganStates(BlockState state, CropBlock block, String modelName, String textureName){
+        ConfiguredModel[] models = new ConfiguredModel[1];
+        models[0] = new ConfiguredModel(models()
+                .crop(modelName +
+                                state.getValue(((PaganCropBlock) block)
+                                .getAgeProperty()),
+
+                ResourceLocation.fromNamespaceAndPath(TheDarkCarnival.MOD_ID,
+                        "block/" + textureName + state.getValue(((PaganCropBlock) block)
+                                .getAgeProperty())))
+                                .renderType("cutout"));
+
+        return models;
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject){
