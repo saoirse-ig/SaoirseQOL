@@ -23,7 +23,9 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         simpleItem(ModItems.JOKER_EYE);
         simpleItem(ModItems.PAGAN_SEEDS);
+        simpleItem(ModItems.PAGAN_CROP_YIELD);
         simpleItem(ModItems.PAGAN_DUST);
+        simpleItem(ModItems.PAGAN_ORB);
 
         saplingItem(ModBlocks.PAGAN_SAPLING);
         saplingItem(ModBlocks.PAGAN_T2_SAPLING);

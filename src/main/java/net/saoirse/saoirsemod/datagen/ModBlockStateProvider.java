@@ -14,6 +14,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.saoirse.saoirsemod.TheDarkCarnival;
 import net.saoirse.saoirsemod.block.ModBlocks;
+import net.saoirse.saoirsemod.block.custom.GrowthTotemBlock;
 import net.saoirse.saoirsemod.block.custom.PaganCropBlock;
 
 import java.util.function.Function;
@@ -81,6 +82,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.PAGAN_T2_PLANKS);
         leavesBlock(ModBlocks.PAGAN_T2_LEAVES);
         saplingBlock(ModBlocks.PAGAN_T2_SAPLING);
+
+
+
+        blockWithItem(ModBlocks.GROWTH_TOTEM_BLOCK);
+
     }
 
     public void makePaganCrop(CropBlock block, String modelName, String textureName){

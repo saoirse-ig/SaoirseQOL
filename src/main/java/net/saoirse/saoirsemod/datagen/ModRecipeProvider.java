@@ -2,15 +2,21 @@ package net.saoirse.saoirsemod.datagen;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.item.crafting.ShapedRecipe;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 import net.saoirse.saoirsemod.TheDarkCarnival;
 import net.saoirse.saoirsemod.block.ModBlocks;
 import net.saoirse.saoirsemod.item.ModItems;
+import net.saoirse.saoirsemod.util.ModTags;
 
 import java.util.List;
 import java.util.function.Consumer;
@@ -28,6 +34,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> pWriter) {
 
+        //TEMPLATE
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.RIDDLE_BOX.get())
                 .pattern("###")
                 .pattern("###")
@@ -36,19 +43,49 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.JOKER_EYE.get()), has(ModItems.JOKER_EYE.get()))
                 .save(pWriter);
 
-
+        //TEMPLATE
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.JOKER_EYE.get(), 9)
                 .requires(ModBlocks.RIDDLE_BOX.get())
                 .unlockedBy(getHasName(ModBlocks.RIDDLE_BOX.get()), has(ModBlocks.RIDDLE_BOX.get()))
                 .save(pWriter);
 
+        //SHAPED CRAFTING
 
-        // PAGAN DUST FROM PAGAN CROP YIELD !EDIT!
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PAGAN_DUST.get())
+        // t1 logs to t1 wood
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PAGAN_WOOD.get())
                 .pattern("##")
                 .pattern("##")
-                .define('#', ModItems.JOKER_EYE.get())
-                .unlockedBy(getHasName(ModItems.JOKER_EYE.get()), has(ModItems.JOKER_EYE.get()))
+                .define('#', ModBlocks.PAGAN_LOG.get())
+                .unlockedBy(getHasName(ModBlocks.PAGAN_LOG.get()), has(ModBlocks.PAGAN_LOG.get()))
+                .save(pWriter);
+
+        // Dust to t1 sapling
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PAGAN_SAPLING.get())
+                .pattern("#$")
+                .define('$', ModItems.PAGAN_DUST.get())
+                .define('#', Ingredient.of(ItemTags.SAPLINGS))
+                .unlockedBy(getHasName(ModItems.PAGAN_DUST.get()), has(ModItems.PAGAN_DUST.get()))
+                .save(pWriter);
+
+
+        //SHAPELESS CRAFTING
+
+        // t1 log to t1 planks
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.PAGAN_PLANKS.get(), 4)
+                .requires(ModBlocks.PAGAN_LOG.get())
+                .unlockedBy(getHasName(ModBlocks.PAGAN_LOG.get()), has(ModBlocks.PAGAN_LOG.get()))
+                .save(pWriter);
+
+        // t2 log to t2 planks
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.PAGAN_T2_PLANKS.get(), 4)
+                .requires(ModBlocks.PAGAN_T2_LOG.get())
+                .unlockedBy(getHasName(ModBlocks.PAGAN_T2_LOG.get()), has(ModBlocks.PAGAN_T2_LOG.get()))
+                .save(pWriter);
+
+        // panicle to dust
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.PAGAN_DUST.get(), 1)
+                .requires(ModItems.PAGAN_CROP_YIELD.get())
+                .unlockedBy(getHasName(ModItems.PAGAN_CROP_YIELD.get()), has(ModItems.PAGAN_CROP_YIELD.get()))
                 .save(pWriter);
 
     }

@@ -15,6 +15,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.saoirse.saoirsemod.block.ModBlocks;
 import net.saoirse.saoirsemod.item.ModCreativeModTabs;
 import net.saoirse.saoirsemod.item.ModItems;
+import net.saoirse.saoirsemod.loot.ModLootModifiers;
 import net.saoirse.saoirsemod.worldgen.ModConfiguredFeatures;
 import org.slf4j.Logger;
 
@@ -34,6 +35,7 @@ public class TheDarkCarnival
         ModCreativeModTabs.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModItems.register(modEventBus);
+        ModLootModifiers.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

@@ -29,6 +29,10 @@ public class ModItems {
             ITEMS.register("pagan_dust",
                     () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> PAGAN_ORB =
+            ITEMS.register("pagan_orb",
+                    () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }

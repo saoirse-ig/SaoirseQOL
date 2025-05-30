@@ -24,6 +24,8 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.JOKER_EYE.get());
                         pOutput.accept(ModItems.PAGAN_SEEDS.get());
                         pOutput.accept(ModItems.PAGAN_DUST.get());
+                        pOutput.accept(ModItems.PAGAN_CROP_YIELD.get());
+                        pOutput.accept(ModItems.PAGAN_ORB.get());
 
 
 
@@ -46,6 +48,8 @@ public class ModCreativeModTabs {
 
                         pOutput.accept(ModBlocks.PAGAN_SAPLING.get());
                         pOutput.accept(ModBlocks.PAGAN_T2_SAPLING.get());
+
+                        pOutput.accept(ModBlocks.GROWTH_TOTEM_BLOCK.get());
 
 
                     }).build());

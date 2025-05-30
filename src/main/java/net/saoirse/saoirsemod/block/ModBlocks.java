@@ -13,12 +13,12 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.saoirse.saoirsemod.TheDarkCarnival;
+import net.saoirse.saoirsemod.block.custom.GrowthTotemBlock;
 import net.saoirse.saoirsemod.block.custom.ModFlammableRotatedPillarBlock;
 import net.saoirse.saoirsemod.block.custom.PaganCropBlock;
 import net.saoirse.saoirsemod.item.ModItems;
 import net.saoirse.saoirsemod.worldgen.tree.PaganT2TreeGrower;
 import net.saoirse.saoirsemod.worldgen.tree.PaganTreeGrower;
-import org.lwjgl.system.SharedLibrary;
 
 import java.util.function.Supplier;
 
@@ -43,6 +43,7 @@ public class ModBlocks {
             () -> new PaganCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
 
 
+    // SAPLINGS
 
     public static final RegistryObject<Block> PAGAN_SAPLING = registerBlock(
             "pagan_sapling",
@@ -52,22 +53,30 @@ public class ModBlocks {
                             .sound(SoundType.GRASS)
             ));
 
+    public static final RegistryObject<Block> PAGAN_T2_SAPLING = registerBlock(
+            "pagan_t2_sapling",
+            () -> new SaplingBlock(
+                    new PaganT2TreeGrower(),
+                    BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)
+                            .sound(SoundType.GRASS)
+            ));
+
     public static final RegistryObject<Block> PAGAN_LOG = registerBlock
             ("pagan_log", () -> new
                     ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)
-                    .strength(3f)));
+                    .strength(2f, 3.0f)));
     public static final RegistryObject<Block> PAGAN_WOOD = registerBlock
             ("pagan_wood", () -> new
                     ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)
-                    .strength(3f)));
+                    .strength(2f, 3.0f)));
     public static final RegistryObject<Block> STRIPPED_PAGAN_LOG = registerBlock
             ("stripped_pagan_log", () -> new
                     ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)
-                    .strength(3f)));
+                    .strength(2f, 3.0f)));
     public static final RegistryObject<Block> STRIPPED_PAGAN_WOOD = registerBlock
             ("stripped_pagan_wood", () -> new
                     ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)
-                    .strength(3f)));
+                    .strength(2f, 3.0f)));
 
     public static final RegistryObject<Block> PAGAN_LEAVES = registerBlock
             ("pagan_leaves", () -> new
@@ -108,30 +117,22 @@ public class ModBlocks {
                     });
 
 
-    public static final RegistryObject<Block> PAGAN_T2_SAPLING = registerBlock(
-            "pagan_t2_sapling",
-            () -> new SaplingBlock(
-                    new PaganT2TreeGrower(), // DIFFERENT GROWER NEEDED ?
-                    BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)
-                            .sound(SoundType.GRASS)
-            ));
-
     public static final RegistryObject<Block> PAGAN_T2_LOG = registerBlock
             ("pagan_t2_log", () -> new
                     ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)
-                    .strength(3f)));
+                    .strength(2f, 3.0f)));
     public static final RegistryObject<Block> PAGAN_T2_WOOD = registerBlock
             ("pagan_t2_wood", () -> new
                     ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)
-                    .strength(3f)));
+                    .strength(2f, 3.0f)));
     public static final RegistryObject<Block> STRIPPED_PAGAN_T2_LOG = registerBlock
             ("stripped_pagan_t2_log", () -> new
                     ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)
-                    .strength(3f)));
+                    .strength(2f, 3.0f)));
     public static final RegistryObject<Block> STRIPPED_PAGAN_T2_WOOD = registerBlock
             ("stripped_pagan_t2_wood", () -> new
                     ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)
-                    .strength(3f)));
+                    .strength(2f, 3.0f)));
 
     public static final RegistryObject<Block> PAGAN_T2_LEAVES = registerBlock
             ("pagan_t2_leaves", () -> new
@@ -170,6 +171,20 @@ public class ModBlocks {
                             return 30;
                         }
                     });
+
+
+
+
+
+
+    // TOTEM BLOCKS
+
+    public static final RegistryObject<Block> GROWTH_TOTEM_BLOCK = registerBlock
+            ("growth_totem_block", () -> new
+                    GrowthTotemBlock(BlockBehaviour.Properties.of()
+                    .sound(SoundType.WOOD)
+                    .strength(3f, 3f)));
+
 
 
     private static <T extends Block> RegistryObject<T> registerBlock

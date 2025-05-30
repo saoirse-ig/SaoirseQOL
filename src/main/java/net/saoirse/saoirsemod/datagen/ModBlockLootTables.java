@@ -47,6 +47,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 createLeavesDrops(block, ModBlocks.PAGAN_T2_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES)); //change riddlebox to sapling
 
 
+        this.dropOther(ModBlocks.GROWTH_TOTEM_BLOCK.get(), ModItems.PAGAN_DUST.get());
+
         LootItemCondition.Builder lootitemcondition$builder = LootItemBlockStatePropertyCondition
                 .hasBlockStateProperties(ModBlocks.PAGAN_CROP.get())
                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(PaganCropBlock.AGE, 7));

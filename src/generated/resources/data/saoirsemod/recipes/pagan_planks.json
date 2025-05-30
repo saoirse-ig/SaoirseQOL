@@ -3,10 +3,11 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "saoirsemod:pagan_crop_yield"
+      "item": "saoirsemod:pagan_log"
     }
   ],
   "result": {
-    "item": "saoirsemod:pagan_dust"
+    "count": 4,
+    "item": "saoirsemod:pagan_planks"
   }
 }

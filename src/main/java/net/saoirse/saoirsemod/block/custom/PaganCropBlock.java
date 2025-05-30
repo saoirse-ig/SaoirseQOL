@@ -21,7 +21,6 @@ public class PaganCropBlock extends CropBlock {
     protected ItemLike getBaseSeedId() {
         return ModItems.PAGAN_SEEDS.get();
     }
-
     @Override
     public IntegerProperty getAgeProperty() {
         return AGE;

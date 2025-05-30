@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_pagan_crop_yield": {
+    "has_pagan_dust": {
       "conditions": {
         "items": [
           {
             "items": [
-              "saoirsemod:pagan_crop_yield"
+              "saoirsemod:pagan_dust"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "saoirsemod:pagan_dust"
+        "recipe": "saoirsemod:pagan_sapling"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_pagan_crop_yield",
+      "has_pagan_dust",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "saoirsemod:pagan_dust"
+      "saoirsemod:pagan_sapling"
     ]
   },
   "sends_telemetry_event": false
