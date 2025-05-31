@@ -7,6 +7,7 @@ If you're reading this you likely have too much time on your hands
 
 There are three types of magic as of right now, that include but are not limited to:
 Pagan Magic (Early Magic / Agriculture)
+
 Traditional Magic (High-Fantasy Magic / Mid-Late Game Magic)
 Heretical Magic (Dark/Blood Magic, Once you craft the book you cannot use other forms of magic)
 
@@ -19,7 +20,7 @@ remain a secret for the most part.
 
 
 # **PAGAN MAGIC**
-The seeds needed for Pagan Magic are rare (DROPRATE PERCENTAGE HERE)
+The seeds needed for Pagan Magic are rare but not impossible at 0.1% 
 but can be collected from basic grass just like other seeds and can then be planted
 and farmed for (NAME HERE) which can be used to make pagan items such as:
 (TOOL NAMES HERE)
