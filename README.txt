@@ -1,3 +1,4 @@
+![alt text](https://github.com/saoirse-ig/TDC/blob/master/src/main/resources/assets/saoirsemod/TDC_Banner.png.png "The Dark Carnival")
 
 # The Dark Carnival
 -------------------------------------------
