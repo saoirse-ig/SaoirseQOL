@@ -1,6 +1,6 @@
 ![alt text](https://github.com/saoirse-ig/TDC/blob/master/src/main/resources/assets/saoirsemod/TDC_Banner.png.png "The Dark Carnival")
 
-`#` The Dark Carnival
+# The Dark Carnival
 -------------------------------------------
 A mod for magic for a minecraft server that has yet to be made in the first place;
 If you're reading this you likely have too much time on your hands
