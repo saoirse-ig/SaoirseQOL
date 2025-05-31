@@ -27,27 +27,88 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.PAGAN_CROP_YIELD.get());
                         pOutput.accept(ModItems.PAGAN_ORB.get());
 
+                        pOutput.accept(ModItems.PAGAN_T1_INGOT.get());
+                        pOutput.accept(ModItems.PAGAN_T2_INGOT.get());
+                        pOutput.accept(ModItems.PAGAN_T3_INGOT.get());
+                        pOutput.accept(ModItems.PAGAN_T4_INGOT.get());
+                        pOutput.accept(ModItems.PAGAN_T5_INGOT.get());
+
+                        pOutput.accept(ModItems.PAGAN_T1_PICKAXE.get());
+                        pOutput.accept(ModItems.PAGAN_T2_PICKAXE.get());
+                        pOutput.accept(ModItems.PAGAN_T3_PICKAXE.get());
+                        pOutput.accept(ModItems.PAGAN_T4_PICKAXE.get());
+                        pOutput.accept(ModItems.PAGAN_T5_PICKAXE.get());
+
+                        pOutput.accept(ModItems.PAGAN_T1_SWORD.get());
+                        pOutput.accept(ModItems.PAGAN_T2_SWORD.get());
+                        pOutput.accept(ModItems.PAGAN_T3_SWORD.get());
+                        pOutput.accept(ModItems.PAGAN_T4_SWORD.get());
+                        pOutput.accept(ModItems.PAGAN_T5_SWORD.get());
+
+                        pOutput.accept(ModItems.PAGAN_T1_AXE.get());
+                        pOutput.accept(ModItems.PAGAN_T2_AXE.get());
+                        pOutput.accept(ModItems.PAGAN_T3_AXE.get());
+                        pOutput.accept(ModItems.PAGAN_T4_AXE.get());
+                        pOutput.accept(ModItems.PAGAN_T5_AXE.get());
+
+                        pOutput.accept(ModItems.PAGAN_T1_SHOVEL.get());
+                        pOutput.accept(ModItems.PAGAN_T2_SHOVEL.get());
+                        pOutput.accept(ModItems.PAGAN_T3_SHOVEL.get());
+                        pOutput.accept(ModItems.PAGAN_T4_SHOVEL.get());
+                        pOutput.accept(ModItems.PAGAN_T5_SHOVEL.get());
+
+                        pOutput.accept(ModItems.PAGAN_T1_HOE.get());
+                        pOutput.accept(ModItems.PAGAN_T2_HOE.get());
+                        pOutput.accept(ModItems.PAGAN_T3_HOE.get());
+                        pOutput.accept(ModItems.PAGAN_T4_HOE.get());
+                        pOutput.accept(ModItems.PAGAN_T5_HOE.get());
+
 
 
                         //BLOCKS
                         pOutput.accept(ModBlocks.RIDDLE_BOX.get());
 
-                        pOutput.accept(ModBlocks.PAGAN_LOG.get());
-                        pOutput.accept(ModBlocks.STRIPPED_PAGAN_LOG.get());
-                        pOutput.accept(ModBlocks.PAGAN_WOOD.get());
-                        pOutput.accept(ModBlocks.STRIPPED_PAGAN_WOOD.get());
-                        pOutput.accept(ModBlocks.PAGAN_PLANKS.get());
-                        pOutput.accept(ModBlocks.PAGAN_LEAVES.get());
-
+                        pOutput.accept(ModBlocks.PAGAN_T1_LOG.get());
                         pOutput.accept(ModBlocks.PAGAN_T2_LOG.get());
-                        pOutput.accept(ModBlocks.STRIPPED_PAGAN_T2_LOG.get());
-                        pOutput.accept(ModBlocks.PAGAN_T2_WOOD.get());
-                        pOutput.accept(ModBlocks.STRIPPED_PAGAN_T2_WOOD.get());
-                        pOutput.accept(ModBlocks.PAGAN_T2_PLANKS.get());
-                        pOutput.accept(ModBlocks.PAGAN_T2_LEAVES.get());
+                        pOutput.accept(ModBlocks.PAGAN_T3_LOG.get());
+                        pOutput.accept(ModBlocks.PAGAN_T4_LOG.get());
+                        pOutput.accept(ModBlocks.PAGAN_T5_LOG.get());
 
-                        pOutput.accept(ModBlocks.PAGAN_SAPLING.get());
+                        pOutput.accept(ModBlocks.STRIPPED_PAGAN_T1_LOG.get());
+                        pOutput.accept(ModBlocks.STRIPPED_PAGAN_T2_LOG.get());
+                        pOutput.accept(ModBlocks.STRIPPED_PAGAN_T3_LOG.get());
+                        pOutput.accept(ModBlocks.STRIPPED_PAGAN_T4_LOG.get());
+                        pOutput.accept(ModBlocks.STRIPPED_PAGAN_T5_LOG.get());
+
+                        pOutput.accept(ModBlocks.STRIPPED_PAGAN_T1_WOOD.get());
+                        pOutput.accept(ModBlocks.STRIPPED_PAGAN_T2_WOOD.get());
+                        pOutput.accept(ModBlocks.STRIPPED_PAGAN_T3_WOOD.get());
+                        pOutput.accept(ModBlocks.STRIPPED_PAGAN_T4_WOOD.get());
+                        pOutput.accept(ModBlocks.STRIPPED_PAGAN_T5_WOOD.get());
+
+                        pOutput.accept(ModBlocks.PAGAN_T1_WOOD.get());
+                        pOutput.accept(ModBlocks.PAGAN_T2_WOOD.get());
+                        pOutput.accept(ModBlocks.PAGAN_T3_WOOD.get());
+                        pOutput.accept(ModBlocks.PAGAN_T4_WOOD.get());
+                        pOutput.accept(ModBlocks.PAGAN_T5_WOOD.get());
+
+                        pOutput.accept(ModBlocks.PAGAN_T1_PLANKS.get());
+                        pOutput.accept(ModBlocks.PAGAN_T2_PLANKS.get());
+                        pOutput.accept(ModBlocks.PAGAN_T3_PLANKS.get());
+                        pOutput.accept(ModBlocks.PAGAN_T4_PLANKS.get());
+                        pOutput.accept(ModBlocks.PAGAN_T5_PLANKS.get());
+
+                        pOutput.accept(ModBlocks.PAGAN_T1_LEAVES.get());
+                        pOutput.accept(ModBlocks.PAGAN_T2_LEAVES.get());
+                        pOutput.accept(ModBlocks.PAGAN_T3_LEAVES.get());
+                        pOutput.accept(ModBlocks.PAGAN_T4_LEAVES.get());
+                        pOutput.accept(ModBlocks.PAGAN_T5_LEAVES.get());
+
+                        pOutput.accept(ModBlocks.PAGAN_T1_SAPLING.get());
                         pOutput.accept(ModBlocks.PAGAN_T2_SAPLING.get());
+                        pOutput.accept(ModBlocks.PAGAN_T3_SAPLING.get());
+                        pOutput.accept(ModBlocks.PAGAN_T4_SAPLING.get());
+                        pOutput.accept(ModBlocks.PAGAN_T5_SAPLING.get());
 
                         pOutput.accept(ModBlocks.GROWTH_TOTEM_BLOCK.get());
 

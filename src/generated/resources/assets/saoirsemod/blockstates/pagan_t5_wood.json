@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "saoirsemod:block/pagan_t5_wood_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "saoirsemod:block/pagan_t5_wood"
+    },
+    "axis=z": {
+      "model": "saoirsemod:block/pagan_t5_wood_horizontal",
+      "x": 90
+    }
+  }
+}

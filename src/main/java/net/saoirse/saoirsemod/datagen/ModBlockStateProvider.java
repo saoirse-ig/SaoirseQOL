@@ -30,29 +30,29 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
 //T1 PAGAN
 
-        logBlock(((RotatedPillarBlock) ModBlocks.PAGAN_LOG.get()));
-        axisBlock(((RotatedPillarBlock) ModBlocks.PAGAN_WOOD.get()),
-                blockTexture(ModBlocks.PAGAN_LOG.get()),
-                blockTexture(ModBlocks.PAGAN_LOG.get()));
+        logBlock(((RotatedPillarBlock) ModBlocks.PAGAN_T1_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.PAGAN_T1_WOOD.get()),
+                blockTexture(ModBlocks.PAGAN_T1_LOG.get()),
+                blockTexture(ModBlocks.PAGAN_T1_LOG.get()));
 
-        axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_PAGAN_LOG.get()),
-                blockTexture(ModBlocks.STRIPPED_PAGAN_LOG.get()),
+        axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_PAGAN_T1_LOG.get()),
+                blockTexture(ModBlocks.STRIPPED_PAGAN_T1_LOG.get()),
                 ResourceLocation.fromNamespaceAndPath(TheDarkCarnival.MOD_ID,
-                        "block/stripped_pagan_log_top"));
+                        "block/stripped_pagan_t1_log_top"));
 
-        axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_PAGAN_WOOD.get()),
-                blockTexture(ModBlocks.STRIPPED_PAGAN_LOG.get()),
-                blockTexture(ModBlocks.STRIPPED_PAGAN_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_PAGAN_T1_WOOD.get()),
+                blockTexture(ModBlocks.STRIPPED_PAGAN_T1_LOG.get()),
+                blockTexture(ModBlocks.STRIPPED_PAGAN_T1_LOG.get()));
 
 
-        blockItem(ModBlocks.PAGAN_LOG);
-        blockItem(ModBlocks.PAGAN_WOOD);
-        blockItem(ModBlocks.STRIPPED_PAGAN_LOG);
-        blockItem(ModBlocks.STRIPPED_PAGAN_WOOD);
+        blockItem(ModBlocks.PAGAN_T1_LOG);
+        blockItem(ModBlocks.PAGAN_T1_WOOD);
+        blockItem(ModBlocks.STRIPPED_PAGAN_T1_LOG);
+        blockItem(ModBlocks.STRIPPED_PAGAN_T1_WOOD);
 
-        blockWithItem(ModBlocks.PAGAN_PLANKS);
-        leavesBlock(ModBlocks.PAGAN_LEAVES);
-        saplingBlock(ModBlocks.PAGAN_SAPLING);
+        blockWithItem(ModBlocks.PAGAN_T1_PLANKS);
+        leavesBlock(ModBlocks.PAGAN_T1_LEAVES);
+        saplingBlock(ModBlocks.PAGAN_T1_SAPLING);
 
         makePaganCrop((CropBlock)ModBlocks.PAGAN_CROP.get(),
                 "pagan_stage", "pagan_stage");
@@ -82,6 +82,87 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.PAGAN_T2_PLANKS);
         leavesBlock(ModBlocks.PAGAN_T2_LEAVES);
         saplingBlock(ModBlocks.PAGAN_T2_SAPLING);
+
+
+//T3 PAGAN
+
+        logBlock(((RotatedPillarBlock) ModBlocks.PAGAN_T3_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.PAGAN_T3_WOOD.get()),
+                blockTexture(ModBlocks.PAGAN_T3_LOG.get()),
+                blockTexture(ModBlocks.PAGAN_T3_LOG.get()));
+
+        axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_PAGAN_T3_LOG.get()),
+                blockTexture(ModBlocks.STRIPPED_PAGAN_T3_LOG.get()),
+                ResourceLocation.fromNamespaceAndPath(TheDarkCarnival.MOD_ID,
+                        "block/stripped_pagan_t3_log_top"));
+
+        axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_PAGAN_T3_WOOD.get()),
+                blockTexture(ModBlocks.STRIPPED_PAGAN_T3_LOG.get()),
+                blockTexture(ModBlocks.STRIPPED_PAGAN_T3_LOG.get()));
+
+
+        blockItem(ModBlocks.PAGAN_T3_LOG);
+        blockItem(ModBlocks.PAGAN_T3_WOOD);
+        blockItem(ModBlocks.STRIPPED_PAGAN_T3_LOG);
+        blockItem(ModBlocks.STRIPPED_PAGAN_T3_WOOD);
+
+        blockWithItem(ModBlocks.PAGAN_T3_PLANKS);
+        leavesBlock(ModBlocks.PAGAN_T3_LEAVES);
+        saplingBlock(ModBlocks.PAGAN_T3_SAPLING);
+
+
+        //T4 PAGAN
+
+        logBlock(((RotatedPillarBlock) ModBlocks.PAGAN_T4_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.PAGAN_T4_WOOD.get()),
+                blockTexture(ModBlocks.PAGAN_T4_LOG.get()),
+                blockTexture(ModBlocks.PAGAN_T4_LOG.get()));
+
+        axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_PAGAN_T4_LOG.get()),
+                blockTexture(ModBlocks.STRIPPED_PAGAN_T4_LOG.get()),
+                ResourceLocation.fromNamespaceAndPath(TheDarkCarnival.MOD_ID,
+                        "block/stripped_pagan_t4_log_top"));
+
+        axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_PAGAN_T4_WOOD.get()),
+                blockTexture(ModBlocks.STRIPPED_PAGAN_T4_LOG.get()),
+                blockTexture(ModBlocks.STRIPPED_PAGAN_T4_LOG.get()));
+
+
+        blockItem(ModBlocks.PAGAN_T4_LOG);
+        blockItem(ModBlocks.PAGAN_T4_WOOD);
+        blockItem(ModBlocks.STRIPPED_PAGAN_T4_LOG);
+        blockItem(ModBlocks.STRIPPED_PAGAN_T4_WOOD);
+
+        blockWithItem(ModBlocks.PAGAN_T4_PLANKS);
+        leavesBlock(ModBlocks.PAGAN_T4_LEAVES);
+        saplingBlock(ModBlocks.PAGAN_T4_SAPLING);
+
+        
+        //T5 PAGAN
+
+        logBlock(((RotatedPillarBlock) ModBlocks.PAGAN_T5_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.PAGAN_T5_WOOD.get()),
+                blockTexture(ModBlocks.PAGAN_T5_LOG.get()),
+                blockTexture(ModBlocks.PAGAN_T5_LOG.get()));
+
+        axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_PAGAN_T5_LOG.get()),
+                blockTexture(ModBlocks.STRIPPED_PAGAN_T5_LOG.get()),
+                ResourceLocation.fromNamespaceAndPath(TheDarkCarnival.MOD_ID,
+                        "block/stripped_pagan_t5_log_top"));
+
+        axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_PAGAN_T5_WOOD.get()),
+                blockTexture(ModBlocks.STRIPPED_PAGAN_T5_LOG.get()),
+                blockTexture(ModBlocks.STRIPPED_PAGAN_T5_LOG.get()));
+
+
+        blockItem(ModBlocks.PAGAN_T5_LOG);
+        blockItem(ModBlocks.PAGAN_T5_WOOD);
+        blockItem(ModBlocks.STRIPPED_PAGAN_T5_LOG);
+        blockItem(ModBlocks.STRIPPED_PAGAN_T5_WOOD);
+
+        blockWithItem(ModBlocks.PAGAN_T5_PLANKS);
+        leavesBlock(ModBlocks.PAGAN_T5_LEAVES);
+        saplingBlock(ModBlocks.PAGAN_T5_SAPLING);
 
 
 

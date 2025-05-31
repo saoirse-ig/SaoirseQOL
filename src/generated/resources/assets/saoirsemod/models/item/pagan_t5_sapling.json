@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "saoirsemod:block/pagan_t5_sapling"
+  }
+}

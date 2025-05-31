@@ -52,15 +52,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         //SHAPED CRAFTING
 
         // t1 logs to t1 wood
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PAGAN_WOOD.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PAGAN_T1_WOOD.get())
                 .pattern("##")
                 .pattern("##")
-                .define('#', ModBlocks.PAGAN_LOG.get())
-                .unlockedBy(getHasName(ModBlocks.PAGAN_LOG.get()), has(ModBlocks.PAGAN_LOG.get()))
+                .define('#', ModBlocks.PAGAN_T1_LOG.get())
+                .unlockedBy(getHasName(ModBlocks.PAGAN_T1_LOG.get()), has(ModBlocks.PAGAN_T1_LOG.get()))
                 .save(pWriter);
 
         // Dust to t1 sapling
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PAGAN_SAPLING.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PAGAN_T1_SAPLING.get())
                 .pattern("#$")
                 .define('$', ModItems.PAGAN_DUST.get())
                 .define('#', Ingredient.of(ItemTags.SAPLINGS))
@@ -71,9 +71,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         //SHAPELESS CRAFTING
 
         // t1 log to t1 planks
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.PAGAN_PLANKS.get(), 4)
-                .requires(ModBlocks.PAGAN_LOG.get())
-                .unlockedBy(getHasName(ModBlocks.PAGAN_LOG.get()), has(ModBlocks.PAGAN_LOG.get()))
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.PAGAN_T1_PLANKS.get(), 4)
+                .requires(ModBlocks.PAGAN_T1_LOG.get())
+                .unlockedBy(getHasName(ModBlocks.PAGAN_T1_LOG.get()), has(ModBlocks.PAGAN_T1_LOG.get()))
                 .save(pWriter);
 
         // t2 log to t2 planks

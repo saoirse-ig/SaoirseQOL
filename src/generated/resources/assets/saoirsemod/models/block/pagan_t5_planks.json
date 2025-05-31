@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "saoirsemod:block/pagan_t5_planks"
+  }
+}

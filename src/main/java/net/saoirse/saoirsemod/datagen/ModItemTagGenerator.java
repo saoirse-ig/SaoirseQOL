@@ -23,25 +23,48 @@ public class ModItemTagGenerator extends ItemTagsProvider {
     protected void addTags(HolderLookup.Provider pProvider) {
 
         this.tag(ItemTags.LOGS)
-                .add(ModBlocks.PAGAN_LOG.get().asItem())
-                .add(ModBlocks.PAGAN_T2_LOG.get().asItem());
+                .add(ModBlocks.PAGAN_T1_LOG.get().asItem())
+                .add(ModBlocks.PAGAN_T2_LOG.get().asItem())
+                .add(ModBlocks.PAGAN_T3_LOG.get().asItem())
+                .add(ModBlocks.PAGAN_T4_LOG.get().asItem())
+                .add(ModBlocks.PAGAN_T5_LOG.get().asItem());
 
         this.tag(ItemTags.LOGS_THAT_BURN)
-                .add(ModBlocks.PAGAN_LOG.get().asItem())
-                .add(ModBlocks.PAGAN_WOOD.get().asItem())
-                .add(ModBlocks.STRIPPED_PAGAN_WOOD.get().asItem())
-                .add(ModBlocks.STRIPPED_PAGAN_LOG.get().asItem())
+                .add(ModBlocks.PAGAN_T1_LOG.get().asItem())
                 .add(ModBlocks.PAGAN_T2_LOG.get().asItem())
+                .add(ModBlocks.PAGAN_T3_LOG.get().asItem())
+                .add(ModBlocks.PAGAN_T4_LOG.get().asItem())
+                .add(ModBlocks.PAGAN_T5_LOG.get().asItem())
+
+                .add(ModBlocks.PAGAN_T1_WOOD.get().asItem())
                 .add(ModBlocks.PAGAN_T2_WOOD.get().asItem())
+                .add(ModBlocks.PAGAN_T3_WOOD.get().asItem())
+                .add(ModBlocks.PAGAN_T4_WOOD.get().asItem())
+                .add(ModBlocks.PAGAN_T5_WOOD.get().asItem())
+
+                .add(ModBlocks.STRIPPED_PAGAN_T1_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_PAGAN_T2_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_PAGAN_T3_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_PAGAN_T4_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_PAGAN_T5_LOG.get().asItem())
+
+                .add(ModBlocks.STRIPPED_PAGAN_T1_WOOD.get().asItem())
                 .add(ModBlocks.STRIPPED_PAGAN_T2_WOOD.get().asItem())
-                .add(ModBlocks.STRIPPED_PAGAN_T2_LOG.get().asItem());
+                .add(ModBlocks.STRIPPED_PAGAN_T3_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_PAGAN_T4_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_PAGAN_T5_WOOD.get().asItem())
+                ;
 
         // don't add leaves/logs here
 
 
         this.tag(ItemTags.PLANKS)
-                .add(ModBlocks.PAGAN_PLANKS.get().asItem())
-                .add(ModBlocks.PAGAN_T2_PLANKS.get().asItem());
+                .add(ModBlocks.PAGAN_T1_PLANKS.get().asItem())
+                .add(ModBlocks.PAGAN_T2_PLANKS.get().asItem())
+                .add(ModBlocks.PAGAN_T3_PLANKS.get().asItem())
+                .add(ModBlocks.PAGAN_T4_PLANKS.get().asItem())
+                .add(ModBlocks.PAGAN_T5_PLANKS.get().asItem())
+        ;
 
     }
 }

@@ -10,7 +10,11 @@ import net.saoirse.saoirsemod.TheDarkCarnival;
 
 public class ModTags {
     public static class Blocks {
-        public static final TagKey<Block> NEEDS_DRUID_TOOL = tag("needs_druid_tool");
+        public static final TagKey<Block> NEEDS_T1_TOOL = tag("needs_t1_tool");
+        public static final TagKey<Block> NEEDS_T2_TOOL = tag("needs_t2_tool");
+        public static final TagKey<Block> NEEDS_T3_TOOL = tag("needs_t3_tool");
+        public static final TagKey<Block> NEEDS_T4_TOOL = tag("needs_t4_tool");
+        public static final TagKey<Block> NEEDS_T5_TOOL = tag("needs_t5_tool");
 
         private static TagKey<Block> tag(String name) {
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(TheDarkCarnival.MOD_ID, name));
