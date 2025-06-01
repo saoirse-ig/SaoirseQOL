@@ -28,6 +28,16 @@ public class ModBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels(){
         blockWithItem(ModBlocks.RIDDLE_BOX);
 
+
+// INGOT BLOCKS
+
+        blockWithItem(ModBlocks.PAGAN_T1_BLOCK);
+        blockWithItem(ModBlocks.PAGAN_T2_BLOCK);
+        blockWithItem(ModBlocks.PAGAN_T3_BLOCK);
+        blockWithItem(ModBlocks.PAGAN_T4_BLOCK);
+        blockWithItem(ModBlocks.PAGAN_T5_BLOCK);
+
+
 //T1 PAGAN
 
         logBlock(((RotatedPillarBlock) ModBlocks.PAGAN_T1_LOG.get()));

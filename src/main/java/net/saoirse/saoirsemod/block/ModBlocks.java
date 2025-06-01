@@ -36,6 +36,34 @@ public class ModBlocks {
 
 
 
+    // INGOT BLOCKS
+
+    public static final RegistryObject<Block> PAGAN_T1_BLOCK = registerBlock
+            ("pagan_t1_block", () -> new
+                    Block(BlockBehaviour.Properties.copy(Blocks.STONE)
+                    .sound(SoundType.METAL)));
+
+    public static final RegistryObject<Block> PAGAN_T2_BLOCK = registerBlock
+            ("pagan_t2_block", () -> new
+                    Block(BlockBehaviour.Properties.copy(Blocks.STONE)
+                    .sound(SoundType.METAL)));
+
+    public static final RegistryObject<Block> PAGAN_T3_BLOCK = registerBlock
+            ("pagan_t3_block", () -> new
+                    Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
+                    .sound(SoundType.METAL)));
+
+    public static final RegistryObject<Block> PAGAN_T4_BLOCK = registerBlock
+            ("pagan_t4_block", () -> new
+                    Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
+                    .sound(SoundType.METAL)));
+
+    public static final RegistryObject<Block> PAGAN_T5_BLOCK = registerBlock
+            ("pagan_t5_block", () -> new
+                    Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK)
+                    .sound(SoundType.METAL)));
+
+
     // CROPS
 
     public static final RegistryObject<Block> PAGAN_CROP = BLOCKS.register("pagan_crop",

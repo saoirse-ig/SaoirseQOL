@@ -63,6 +63,13 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.PAGAN_T4_PLANKS.get());
         this.dropSelf(ModBlocks.PAGAN_T5_PLANKS.get());
 
+        this.dropSelf(ModBlocks.PAGAN_T1_BLOCK.get());
+        this.dropSelf(ModBlocks.PAGAN_T2_BLOCK.get());
+        this.dropSelf(ModBlocks.PAGAN_T3_BLOCK.get());
+        this.dropSelf(ModBlocks.PAGAN_T4_BLOCK.get());
+        this.dropSelf(ModBlocks.PAGAN_T5_BLOCK.get());
+
+
 
 
         this.add(ModBlocks.PAGAN_T1_LEAVES.get(), block ->

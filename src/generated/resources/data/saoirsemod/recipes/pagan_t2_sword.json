@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "saoirsemod:pagan_t2_ingot"
+    },
+    "$": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " # ",
+    " # ",
+    " $ "
+  ],
+  "result": {
+    "item": "saoirsemod:pagan_t2_sword"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 512,
+  "experience": 0.25,
+  "group": "t2",
+  "ingredient": {
+    "item": "saoirsemod:pagan_t2_raw_ore"
+  },
+  "result": "saoirsemod:pagan_t2_ingot"
+}

@@ -47,6 +47,27 @@ public class ModFlammableRotatedPillarBlock extends RotatedPillarBlock {
             if(state.is(ModBlocks.PAGAN_T2_WOOD.get())){
                 return ModBlocks.STRIPPED_PAGAN_T2_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
             }
+
+            if(state.is(ModBlocks.PAGAN_T3_LOG.get())){
+                return ModBlocks.STRIPPED_PAGAN_T3_LOG.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            }
+            if(state.is(ModBlocks.PAGAN_T3_WOOD.get())){
+                return ModBlocks.STRIPPED_PAGAN_T3_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            }
+
+            if(state.is(ModBlocks.PAGAN_T4_LOG.get())){
+                return ModBlocks.STRIPPED_PAGAN_T4_LOG.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            }
+            if(state.is(ModBlocks.PAGAN_T4_WOOD.get())){
+                return ModBlocks.STRIPPED_PAGAN_T4_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            }
+
+            if(state.is(ModBlocks.PAGAN_T5_LOG.get())){
+                return ModBlocks.STRIPPED_PAGAN_T5_LOG.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            }
+            if(state.is(ModBlocks.PAGAN_T5_WOOD.get())){
+                return ModBlocks.STRIPPED_PAGAN_T5_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            }
         }
 
         return super.getToolModifiedState(state, context, toolAction, simulate);

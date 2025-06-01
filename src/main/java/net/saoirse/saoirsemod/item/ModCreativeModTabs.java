@@ -15,23 +15,11 @@ public class ModCreativeModTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, TheDarkCarnival.MOD_ID);
 
 
-    public static final RegistryObject<CreativeModeTab> TDC_TAB = CREATIVE_MODE_TABS.register("tdc_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.PAGAN_DUST.get()))
-                    .title(Component.translatable("creativetab.tdc_tab"))
+    public static final RegistryObject<CreativeModeTab> TDC_TOOLS_TAB = CREATIVE_MODE_TABS.register("tdc_tools_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.PAGAN_T5_SWORD.get()))
+                    .title(Component.translatable("creativetab.tdc_tools_tab"))
                     .displayItems((pParameters, pOutput) -> {
 
-                        //ITEMS
-                        pOutput.accept(ModItems.JOKER_EYE.get());
-                        pOutput.accept(ModItems.PAGAN_SEEDS.get());
-                        pOutput.accept(ModItems.PAGAN_DUST.get());
-                        pOutput.accept(ModItems.PAGAN_CROP_YIELD.get());
-                        pOutput.accept(ModItems.PAGAN_ORB.get());
-
-                        pOutput.accept(ModItems.PAGAN_T1_INGOT.get());
-                        pOutput.accept(ModItems.PAGAN_T2_INGOT.get());
-                        pOutput.accept(ModItems.PAGAN_T3_INGOT.get());
-                        pOutput.accept(ModItems.PAGAN_T4_INGOT.get());
-                        pOutput.accept(ModItems.PAGAN_T5_INGOT.get());
 
                         pOutput.accept(ModItems.PAGAN_T1_PICKAXE.get());
                         pOutput.accept(ModItems.PAGAN_T2_PICKAXE.get());
@@ -63,6 +51,32 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.PAGAN_T4_HOE.get());
                         pOutput.accept(ModItems.PAGAN_T5_HOE.get());
 
+                    }).build());
+
+    public static final RegistryObject<CreativeModeTab> TDC_TAB = CREATIVE_MODE_TABS.register("tdc_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.PAGAN_DUST.get()))
+                    .title(Component.translatable("creativetab.tdc_tab"))
+                    .displayItems((pParameters, pOutput) -> {
+
+                        //ITEMS
+                        pOutput.accept(ModItems.JOKER_EYE.get());
+                        pOutput.accept(ModItems.PAGAN_SEEDS.get());
+                        pOutput.accept(ModItems.PAGAN_DUST.get());
+                        pOutput.accept(ModItems.PAGAN_CROP_YIELD.get());
+                        pOutput.accept(ModItems.PAGAN_ORB.get());
+
+                        pOutput.accept(ModItems.PAGAN_T1_INGOT.get());
+                        pOutput.accept(ModItems.PAGAN_T2_INGOT.get());
+                        pOutput.accept(ModItems.PAGAN_T3_INGOT.get());
+                        pOutput.accept(ModItems.PAGAN_T4_INGOT.get());
+                        pOutput.accept(ModItems.PAGAN_T5_INGOT.get());
+
+                        pOutput.accept(ModItems.PAGAN_T1_RAW_ORE.get());
+                        pOutput.accept(ModItems.PAGAN_T2_RAW_ORE.get());
+                        pOutput.accept(ModItems.PAGAN_T3_RAW_ORE.get());
+                        pOutput.accept(ModItems.PAGAN_T4_RAW_ORE.get());
+                        pOutput.accept(ModItems.PAGAN_T5_RAW_ORE.get());
+                        pOutput.accept(ModItems.PAGAN_T5_SCRAP.get());
 
 
                         //BLOCKS

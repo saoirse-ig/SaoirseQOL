@@ -31,6 +31,56 @@ public class ModItems {
             ITEMS.register("pagan_orb",
                     () -> new Item(new Item.Properties()));
 
+
+    // INGOTS / RAW
+
+    public static final RegistryObject<Item> PAGAN_T1_INGOT =
+            ITEMS.register("pagan_t1_ingot",
+                    () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> PAGAN_T2_INGOT =
+            ITEMS.register("pagan_t2_ingot",
+                    () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> PAGAN_T3_INGOT =
+            ITEMS.register("pagan_t3_ingot",
+                    () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> PAGAN_T4_INGOT =
+            ITEMS.register("pagan_t4_ingot",
+                    () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> PAGAN_T5_INGOT =
+            ITEMS.register("pagan_t5_ingot",
+                    () -> new Item(new Item.Properties()));
+
+
+
+    public static final RegistryObject<Item> PAGAN_T1_RAW_ORE =
+            ITEMS.register("pagan_t1_raw_ore",
+                    () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> PAGAN_T2_RAW_ORE =
+            ITEMS.register("pagan_t2_raw_ore",
+                    () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> PAGAN_T3_RAW_ORE =
+            ITEMS.register("pagan_t3_raw_ore",
+                    () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> PAGAN_T4_RAW_ORE =
+            ITEMS.register("pagan_t4_raw_ore",
+                    () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> PAGAN_T5_RAW_ORE =
+            ITEMS.register("pagan_t5_raw_ore",
+                    () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> PAGAN_T5_SCRAP =
+            ITEMS.register("pagan_t5_scrap",
+                    () -> new Item(new Item.Properties()));
+
+
     //T1 TOOLS STONE
 
     public static final RegistryObject<Item> PAGAN_T1_SWORD =
@@ -48,10 +98,6 @@ public class ModItems {
     public static final RegistryObject<Item> PAGAN_T1_HOE =
             ITEMS.register("pagan_t1_hoe",
                     () -> new HoeItem(ModToolTiers.T1, 2, 1.2f, new Item.Properties()));
-
-    public static final RegistryObject<Item> PAGAN_T1_INGOT =
-            ITEMS.register("pagan_t1_ingot",
-                    () -> new Item(new Item.Properties()));
     
     //T2 TOOLS IRON
 
@@ -71,9 +117,6 @@ public class ModItems {
             ITEMS.register("pagan_t2_hoe",
                     () -> new HoeItem(ModToolTiers.T2, 2, 1.2f, new Item.Properties()));
 
-    public static final RegistryObject<Item> PAGAN_T2_INGOT =
-            ITEMS.register("pagan_t2_ingot",
-                    () -> new Item(new Item.Properties()));
 
     //T3 TOOLS DIAMOND
 
@@ -93,9 +136,6 @@ public class ModItems {
             ITEMS.register("pagan_t3_hoe",
                     () -> new HoeItem(ModToolTiers.T3, 2, 1.2f, new Item.Properties()));
 
-    public static final RegistryObject<Item> PAGAN_T3_INGOT =
-            ITEMS.register("pagan_t3_ingot",
-                    () -> new Item(new Item.Properties()));
 
     //T4 TOOLS GOLD
 
@@ -115,9 +155,6 @@ public class ModItems {
             ITEMS.register("pagan_t4_hoe",
                     () -> new HoeItem(ModToolTiers.T4, 2, 1.2f, new Item.Properties()));
 
-    public static final RegistryObject<Item> PAGAN_T4_INGOT =
-            ITEMS.register("pagan_t4_ingot",
-                    () -> new Item(new Item.Properties()));
 
     //T5 TOOLS NETHERITE
 
@@ -137,9 +174,6 @@ public class ModItems {
             ITEMS.register("pagan_t5_hoe",
                     () -> new HoeItem(ModToolTiers.T5, 2, 1.2f, new Item.Properties()));
 
-    public static final RegistryObject<Item> PAGAN_T5_INGOT =
-            ITEMS.register("pagan_t5_ingot",
-                    () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

@@ -26,7 +26,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
     protected void addTags(HolderLookup.Provider pProvider) {
 
 
-        /*
+
         this.tag(BlockTags.NEEDS_STONE_TOOL)
 
                 .add(ModBlocks.PAGAN_T1_LOG.get())
@@ -74,7 +74,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.STRIPPED_PAGAN_T5_WOOD.get())
 
                 ;
-        */
+
 
 
         this.tag(BlockTags.MINEABLE_WITH_AXE)
@@ -121,6 +121,24 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.PAGAN_T3_LOG.get())
                 .add(ModBlocks.PAGAN_T4_LOG.get())
                 .add(ModBlocks.PAGAN_T5_LOG.get())
+
+                .add(ModBlocks.PAGAN_T1_WOOD.get())
+                .add(ModBlocks.PAGAN_T2_WOOD.get())
+                .add(ModBlocks.PAGAN_T3_WOOD.get())
+                .add(ModBlocks.PAGAN_T4_WOOD.get())
+                .add(ModBlocks.PAGAN_T5_WOOD.get())
+
+                .add(ModBlocks.STRIPPED_PAGAN_T1_LOG.get())
+                .add(ModBlocks.STRIPPED_PAGAN_T2_LOG.get())
+                .add(ModBlocks.STRIPPED_PAGAN_T3_LOG.get())
+                .add(ModBlocks.STRIPPED_PAGAN_T4_LOG.get())
+                .add(ModBlocks.STRIPPED_PAGAN_T5_LOG.get())
+
+                .add(ModBlocks.STRIPPED_PAGAN_T1_WOOD.get())
+                .add(ModBlocks.STRIPPED_PAGAN_T2_WOOD.get())
+                .add(ModBlocks.STRIPPED_PAGAN_T3_WOOD.get())
+                .add(ModBlocks.STRIPPED_PAGAN_T4_WOOD.get())
+                .add(ModBlocks.STRIPPED_PAGAN_T5_WOOD.get())
         ;
 
         this.tag(BlockTags.LOGS_THAT_BURN)

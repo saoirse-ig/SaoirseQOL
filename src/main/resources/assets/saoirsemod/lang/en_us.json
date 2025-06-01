@@ -1,18 +1,20 @@
 {
 
+  "block.saoirsemod.riddlebox": "Riddle Box",
+  "item.saoirsemod.joker_eye": "Joker Eye",
+
   "item.saoirsemod.pagan_seeds": "Seeds na Beatha",
   "item.saoirsemod.pagan_dust": "Sidhe Ash",
   "item.saoirsemod.pagan_crop_yield": "Panicle na Beatha",
   "item.saoirsemod.pagan_orb": "Eye of Sidhe",
 
   "block.saoirsemod.growth_totem_block": "Totem of Growth",
-  "block.saoirsemod.riddlebox": "Riddle Box",
 
   "block.saoirsemod.pagan_t1_sapling": "Féth Fíada Sapling",
   "block.saoirsemod.pagan_t1_log": "Féth Fíada Log",
   "block.saoirsemod.stripped_pagan_t1_log": "Stripped Féth Fíada Log",
   "block.saoirsemod.pagan_t1_wood": "Féth Fíada Wood",
-  "block.saoirsemod.stripped_t1_pagan_wood": "Stripped Féth Fíada Wood",
+  "block.saoirsemod.stripped_pagan_t1_wood": "Stripped Féth Fíada Wood",
   "block.saoirsemod.pagan_t1_leaves": "Féth Fíada Leaves",
   "block.saoirsemod.pagan_t1_planks": "Féth Fíada Planks",
 
@@ -49,6 +51,11 @@
   "block.saoirsemod.pagan_t5_planks": "Morrígan’s Blood-Bark Spine Planks",
 
 
+  "item.saoirsemod.pagan_t1_raw_ore": "Raw Fíada",
+  "item.saoirsemod.pagan_t2_raw_ore": "Raw Fenic",
+  "item.saoirsemod.pagan_t3_raw_ore": "Raw Lunantite",
+  "item.saoirsemod.pagan_t4_raw_ore": "Raw Cerno",
+  "item.saoirsemod.pagan_t5_raw_ore": "Raw Morrígan",
 
   "item.saoirsemod.pagan_t1_pickaxe": "Fíada Pickaxe",
   "item.saoirsemod.pagan_t1_axe": "Fíada Axe",
@@ -78,13 +85,16 @@
   "item.saoirsemod.pagan_t4_hoe": "Cerno Hoe",
   "item.saoirsemod.pagan_t4_ingot": "Cerno Ingot",
 
-  "item.saoirsemod.pagan_t5_pickaxe": "Morrígan’s Pickaxe",
-  "item.saoirsemod.pagan_t5_axe": "Morrígan’s Axe",
-  "item.saoirsemod.pagan_t5_sword": "Morrígan’s Sword",
-  "item.saoirsemod.pagan_t5_shovel": "Morrígan’s Shovel",
-  "item.saoirsemod.pagan_t5_hoe": "Morrígan’s Hoe",
-  "item.saoirsemod.pagan_t5_ingot": "Morrígan's Ingot",
+  "item.saoirsemod.pagan_t5_pickaxe": "Morrígan Pickaxe",
+  "item.saoirsemod.pagan_t5_axe": "Morrígan Axe",
+  "item.saoirsemod.pagan_t5_sword": "Morrígan Sword",
+  "item.saoirsemod.pagan_t5_shovel": "Morrígan Shovel",
+  "item.saoirsemod.pagan_t5_hoe": "Morrígan Hoe",
+  "item.saoirsemod.pagan_t5_ingot": "Morrígan Ingot",
+
+  "item.saoirsemod.pagan_t5_scrap": "Morrígan Scrap",
 
 
-  "creativetab.tdc_tab": "The Dark Carnival"
+  "creativetab.tdc_tab": "TDC - Main",
+  "creativetab.tdc_tools_tab": "TDC - Tools"
 }

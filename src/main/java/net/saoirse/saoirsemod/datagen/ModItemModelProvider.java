@@ -27,6 +27,14 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.PAGAN_DUST);
         simpleItem(ModItems.PAGAN_ORB);
 
+        simpleItem(ModItems.PAGAN_T1_RAW_ORE);
+        simpleItem(ModItems.PAGAN_T2_RAW_ORE);
+        simpleItem(ModItems.PAGAN_T3_RAW_ORE);
+        simpleItem(ModItems.PAGAN_T4_RAW_ORE);
+        simpleItem(ModItems.PAGAN_T5_RAW_ORE);
+
+        simpleItem(ModItems.PAGAN_T5_SCRAP);
+
         simpleItem(ModItems.PAGAN_T1_INGOT);
         simpleItem(ModItems.PAGAN_T2_INGOT);
         simpleItem(ModItems.PAGAN_T3_INGOT);
@@ -38,7 +46,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         saplingItem(ModBlocks.PAGAN_T3_SAPLING);
         saplingItem(ModBlocks.PAGAN_T4_SAPLING);
         saplingItem(ModBlocks.PAGAN_T5_SAPLING);
-
         
         handheldItem(ModItems.PAGAN_T1_PICKAXE);
         handheldItem(ModItems.PAGAN_T1_AXE);

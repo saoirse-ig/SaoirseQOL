@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_pagan_t3_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "saoirsemod:pagan_t3_log"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "saoirsemod:pagan_t3_planks"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_pagan_t3_log",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "saoirsemod:pagan_t3_planks"
+    ]
+  },
+  "sends_telemetry_event": false
+}
