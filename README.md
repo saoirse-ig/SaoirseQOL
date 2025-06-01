@@ -18,7 +18,7 @@ Below are ideas for later versions of this mod :3
 
 ## Mod Progession:
 
-![alt text](https://github.com/saoirse-ig/TDC/blob/master/src/main/resources/assets/saoirsemod/textures/item/pagan_seeds.png)
+![alt text](https://github.com/saoirse-ig/TDC/blob/master/src/main/resources/assets/saoirsemod/textures/item/unused_wall.png)
 
 Below will show the basic steps and progression for the mod
 
