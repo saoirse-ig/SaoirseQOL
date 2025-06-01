@@ -34,6 +34,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.PAGAN_T5_RAW_ORE);
 
         simpleItem(ModItems.PAGAN_T5_SCRAP);
+        simpleItem(ModItems.PAGAN_T3_CRAFTING_ITEM);
 
         simpleItem(ModItems.PAGAN_T1_INGOT);
         simpleItem(ModItems.PAGAN_T2_INGOT);

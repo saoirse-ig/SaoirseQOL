@@ -72,17 +72,29 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModBlocks.RIDDLE_BOX.get()), has(ModBlocks.RIDDLE_BOX.get()))
                 .save(pWriter);
 
+
+
         //SHAPED CRAFTING
 
-        // t1 logs to t1 wood
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PAGAN_T1_WOOD.get())
-                .pattern("##")
-                .pattern("##")
-                .define('#', ModBlocks.PAGAN_T1_LOG.get())
-                .unlockedBy(getHasName(ModBlocks.PAGAN_T1_LOG.get()), has(ModBlocks.PAGAN_T1_LOG.get()))
+        // T3 Sapling Crafting Item
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PAGAN_T3_CRAFTING_ITEM.get())
+                .pattern("OSB")
+                .pattern("J$A")
+                .pattern("DMC")
+                .define('$', ModItems.PAGAN_DUST.get())
+                .define('O', Blocks.OAK_SAPLING)
+                .define('S', Blocks.SPRUCE_SAPLING)
+                .define('B', Blocks.BIRCH_SAPLING)
+                .define('J', Blocks.JUNGLE_SAPLING)
+                .define('D', Blocks.DARK_OAK_SAPLING)
+                .define('M', Blocks.BAMBOO)
+                .define('A', Blocks.ACACIA_SAPLING)
+                .define('C', Blocks.CHERRY_SAPLING)
+                .unlockedBy(getHasName(ModBlocks.PAGAN_T2_SAPLING.get()), has(ModBlocks.PAGAN_T2_SAPLING.get()))
                 .save(pWriter);
 
-        // Dust to t1 sapling
+
+        // T1 Sapling
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PAGAN_T1_SAPLING.get())
                 .pattern("#$")
                 .define('$', ModItems.PAGAN_DUST.get())
@@ -90,13 +102,61 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.PAGAN_DUST.get()), has(ModItems.PAGAN_DUST.get()))
                 .save(pWriter);
 
-        // Dust to t1 sapling
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PAGAN_T1_SAPLING.get())
-                .pattern("#$")
+        // T2 Sapling
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PAGAN_T2_SAPLING.get())
+                .pattern(" R ")
+                .pattern("S1B")
+                .pattern(" $ ")
                 .define('$', ModItems.PAGAN_DUST.get())
-                .define('#', Ingredient.of(ItemTags.SAPLINGS))
-                .unlockedBy(getHasName(ModItems.PAGAN_DUST.get()), has(ModItems.PAGAN_DUST.get()))
+                .define('1', ModBlocks.PAGAN_T1_SAPLING.get())
+                .define('R', Items.ROTTEN_FLESH)
+                .define('S', Items.SPIDER_EYE)
+                .define('B', Items.BONE_BLOCK)
+                .unlockedBy(getHasName(ModBlocks.PAGAN_T1_SAPLING.get()), has(ModBlocks.PAGAN_T1_SAPLING.get()))
                 .save(pWriter);
+
+        // T3 Sapling
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PAGAN_T3_SAPLING.get())
+                .pattern(" $ ")
+                .pattern("$2$")
+                .pattern(" $ ")
+                .define('$', ModItems.PAGAN_T3_CRAFTING_ITEM.get())
+                .define('2', ModBlocks.PAGAN_T2_SAPLING.get())
+                .unlockedBy(getHasName(ModBlocks.PAGAN_T2_SAPLING.get()), has(ModBlocks.PAGAN_T2_SAPLING.get()))
+                .save(pWriter);
+
+        // T4 Sapling
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PAGAN_T4_SAPLING.get())
+                .pattern("$$$")
+                .pattern("$3$")
+                .pattern("$$$")
+                .define('$', ModBlocks.PAGAN_T4_BLOCK_COMPRESSED.get())
+                .define('3', ModBlocks.PAGAN_T3_SAPLING.get())
+                .unlockedBy(getHasName(ModBlocks.PAGAN_T3_SAPLING.get()), has(ModBlocks.PAGAN_T3_SAPLING.get()))
+                .save(pWriter);
+
+        // T5 Sapling
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PAGAN_T5_SAPLING.get())
+                .pattern("CRN")
+                .pattern("R4R")
+                .pattern("NRC")
+                .define('C', ModBlocks.PAGAN_T4_BLOCK_COMPRESSED.get())
+                .define('4', ModBlocks.PAGAN_T4_SAPLING.get())
+                .define('N', Blocks.NETHERITE_BLOCK)
+                .define('R', Blocks.RED_MUSHROOM)
+                .unlockedBy(getHasName(ModBlocks.PAGAN_T4_SAPLING.get()), has(ModBlocks.PAGAN_T4_SAPLING.get()))
+                .save(pWriter);
+
+
+        // Compress T4 Block
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PAGAN_T4_BLOCK_COMPRESSED.get())
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .define('#', ModBlocks.PAGAN_T4_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.PAGAN_T4_BLOCK.get()), has(ModBlocks.PAGAN_T4_BLOCK.get()))
+                .save(pWriter);
+
 
 
         // Pagan Pickaxe T1-T5
@@ -382,6 +442,45 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(pWriter);
 
 
+        // Logs to wood T1-T5
+        
+        
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PAGAN_T1_WOOD.get())
+                .pattern("##")
+                .pattern("##")
+                .define('#', ModBlocks.PAGAN_T1_LOG.get())
+                .unlockedBy(getHasName(ModBlocks.PAGAN_T1_LOG.get()), has(ModBlocks.PAGAN_T1_LOG.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PAGAN_T2_WOOD.get())
+                .pattern("##")
+                .pattern("##")
+                .define('#', ModBlocks.PAGAN_T2_LOG.get())
+                .unlockedBy(getHasName(ModBlocks.PAGAN_T2_LOG.get()), has(ModBlocks.PAGAN_T2_LOG.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PAGAN_T3_WOOD.get())
+                .pattern("##")
+                .pattern("##")
+                .define('#', ModBlocks.PAGAN_T3_LOG.get())
+                .unlockedBy(getHasName(ModBlocks.PAGAN_T3_LOG.get()), has(ModBlocks.PAGAN_T3_LOG.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PAGAN_T4_WOOD.get())
+                .pattern("##")
+                .pattern("##")
+                .define('#', ModBlocks.PAGAN_T4_LOG.get())
+                .unlockedBy(getHasName(ModBlocks.PAGAN_T4_LOG.get()), has(ModBlocks.PAGAN_T4_LOG.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PAGAN_T5_WOOD.get())
+                .pattern("##")
+                .pattern("##")
+                .define('#', ModBlocks.PAGAN_T5_LOG.get())
+                .unlockedBy(getHasName(ModBlocks.PAGAN_T5_LOG.get()), has(ModBlocks.PAGAN_T5_LOG.get()))
+                .save(pWriter);
+
+
         // Logs to ore T1-T5
         
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PAGAN_T1_RAW_ORE.get())
@@ -429,7 +528,21 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModBlocks.PAGAN_T5_LOG.get()), has(ModBlocks.PAGAN_T5_LOG.get()))
                 .save(pWriter);
 
+
+        // T5 Scrap to Ingot
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PAGAN_T5_INGOT.get())
+                .pattern("###")
+                .pattern("#$$")
+                .pattern("$$ ")
+                .define('#', ModItems.PAGAN_T5_SCRAP.get())
+                .define('$', Items.NETHERITE_INGOT)
+                .unlockedBy(getHasName(ModItems.PAGAN_T5_SCRAP.get()), has(ModItems.PAGAN_T5_SCRAP.get()))
+                .save(pWriter);
+
         //SHAPELESS CRAFTING
+
+
 
         // LOGS TO PLANKS T1-T5
 

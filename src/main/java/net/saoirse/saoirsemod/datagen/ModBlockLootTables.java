@@ -69,6 +69,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.PAGAN_T4_BLOCK.get());
         this.dropSelf(ModBlocks.PAGAN_T5_BLOCK.get());
 
+        this.dropSelf(ModBlocks.PAGAN_T4_BLOCK_COMPRESSED.get());
+
 
 
 

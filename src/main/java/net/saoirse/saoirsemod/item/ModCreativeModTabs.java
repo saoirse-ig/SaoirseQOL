@@ -63,6 +63,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.PAGAN_SEEDS.get());
                         pOutput.accept(ModItems.PAGAN_DUST.get());
                         pOutput.accept(ModItems.PAGAN_CROP_YIELD.get());
+                        pOutput.accept(ModItems.PAGAN_T3_CRAFTING_ITEM.get());
                         pOutput.accept(ModItems.PAGAN_ORB.get());
 
                         pOutput.accept(ModItems.PAGAN_T1_INGOT.get());
@@ -123,6 +124,14 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.PAGAN_T3_SAPLING.get());
                         pOutput.accept(ModBlocks.PAGAN_T4_SAPLING.get());
                         pOutput.accept(ModBlocks.PAGAN_T5_SAPLING.get());
+
+                        pOutput.accept(ModBlocks.PAGAN_T1_BLOCK.get());
+                        pOutput.accept(ModBlocks.PAGAN_T2_BLOCK.get());
+                        pOutput.accept(ModBlocks.PAGAN_T3_BLOCK.get());
+                        pOutput.accept(ModBlocks.PAGAN_T4_BLOCK.get());
+                        pOutput.accept(ModBlocks.PAGAN_T5_BLOCK.get());
+
+                        pOutput.accept(ModBlocks.PAGAN_T4_BLOCK_COMPRESSED.get());
 
                         pOutput.accept(ModBlocks.GROWTH_TOTEM_BLOCK.get());
 

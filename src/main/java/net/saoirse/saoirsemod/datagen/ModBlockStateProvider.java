@@ -34,7 +34,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.PAGAN_T1_BLOCK);
         blockWithItem(ModBlocks.PAGAN_T2_BLOCK);
         blockWithItem(ModBlocks.PAGAN_T3_BLOCK);
+
         blockWithItem(ModBlocks.PAGAN_T4_BLOCK);
+        blockWithItem(ModBlocks.PAGAN_T4_BLOCK_COMPRESSED);
+
         blockWithItem(ModBlocks.PAGAN_T5_BLOCK);
 
 

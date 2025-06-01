@@ -50,7 +50,6 @@
   "block.saoirsemod.pagan_t5_leaves": "Morrígan’s Blood-Bark Leaves",
   "block.saoirsemod.pagan_t5_planks": "Morrígan’s Blood-Bark Spine Planks",
 
-
   "item.saoirsemod.pagan_t1_raw_ore": "Raw Fíada",
   "item.saoirsemod.pagan_t2_raw_ore": "Raw Fenic",
   "item.saoirsemod.pagan_t3_raw_ore": "Raw Lunantite",
@@ -64,12 +63,16 @@
   "item.saoirsemod.pagan_t1_hoe": "Fíada Hoe",
   "item.saoirsemod.pagan_t1_ingot": "Fíada Ingot",
 
+  "block.saoirsemod.pagan_t1_block": "Fíada Block",
+
   "item.saoirsemod.pagan_t2_pickaxe": "Fenic Pickaxe",
   "item.saoirsemod.pagan_t2_axe": "Fenic Axe",
   "item.saoirsemod.pagan_t2_sword": "Fenic Sword",
   "item.saoirsemod.pagan_t2_shovel": "Fenic Shovel",
   "item.saoirsemod.pagan_t2_hoe": "Fenic Hoe",
   "item.saoirsemod.pagan_t2_ingot": "Fenic Ingot",
+
+  "block.saoirsemod.pagan_t2_block": "Fenic Block",
 
   "item.saoirsemod.pagan_t3_pickaxe": "Lunantite Pickaxe",
   "item.saoirsemod.pagan_t3_axe": "Lunantite Axe",
@@ -78,12 +81,18 @@
   "item.saoirsemod.pagan_t3_hoe": "Lunantite Hoe",
   "item.saoirsemod.pagan_t3_ingot": "Lunantite Ingot",
 
+  "block.saoirsemod.pagan_t3_block": "Lunantite Block",
+  "item.saoirsemod.pagan_t3_crafting_item": "Bundle of Saplings",
+
   "item.saoirsemod.pagan_t4_pickaxe": "Cerno Pickaxe",
   "item.saoirsemod.pagan_t4_axe": "Cerno Axe",
   "item.saoirsemod.pagan_t4_sword": "Cerno Sword",
   "item.saoirsemod.pagan_t4_shovel": "Cerno Shovel",
   "item.saoirsemod.pagan_t4_hoe": "Cerno Hoe",
   "item.saoirsemod.pagan_t4_ingot": "Cerno Ingot",
+
+  "block.saoirsemod.pagan_t4_block": "Cerno Block",
+  "block.saoirsemod.pagan_t4_block_compressed": "Compressed Cerno Block",
 
   "item.saoirsemod.pagan_t5_pickaxe": "Morrígan Pickaxe",
   "item.saoirsemod.pagan_t5_axe": "Morrígan Axe",
@@ -92,7 +101,9 @@
   "item.saoirsemod.pagan_t5_hoe": "Morrígan Hoe",
   "item.saoirsemod.pagan_t5_ingot": "Morrígan Ingot",
 
+  "block.saoirsemod.pagan_t5_block": "Morrígan Block",
   "item.saoirsemod.pagan_t5_scrap": "Morrígan Scrap",
+
 
 
   "creativetab.tdc_tab": "TDC - Main",

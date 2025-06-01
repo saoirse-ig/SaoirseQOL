@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "$": {
+      "item": "saoirsemod:pagan_t3_crafting_item"
+    },
+    "2": {
+      "item": "saoirsemod:pagan_t2_sapling"
+    }
+  },
+  "pattern": [
+    " $ ",
+    "$2$",
+    " $ "
+  ],
+  "result": {
+    "item": "saoirsemod:pagan_t3_sapling"
+  },
+  "show_notification": true
+}

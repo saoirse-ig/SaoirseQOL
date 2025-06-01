@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "$": {
+      "item": "saoirsemod:pagan_dust"
+    },
+    "1": {
+      "item": "saoirsemod:pagan_t1_sapling"
+    },
+    "B": {
+      "item": "minecraft:bone_block"
+    },
+    "R": {
+      "item": "minecraft:rotten_flesh"
+    },
+    "S": {
+      "item": "minecraft:spider_eye"
+    }
+  },
+  "pattern": [
+    " R ",
+    "S1B",
+    " $ "
+  ],
+  "result": {
+    "item": "saoirsemod:pagan_t2_sapling"
+  },
+  "show_notification": true
+}

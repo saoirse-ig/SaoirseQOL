@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "saoirsemod:pagan_t5_scrap"
+    },
+    "$": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "pattern": [
+    "###",
+    "#$$",
+    "$$ "
+  ],
+  "result": {
+    "item": "saoirsemod:pagan_t5_ingot"
+  },
+  "show_notification": true
+}

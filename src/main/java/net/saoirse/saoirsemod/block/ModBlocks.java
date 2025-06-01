@@ -50,12 +50,17 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> PAGAN_T3_BLOCK = registerBlock
             ("pagan_t3_block", () -> new
-                    Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
+                    Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK)
                     .sound(SoundType.METAL)));
 
     public static final RegistryObject<Block> PAGAN_T4_BLOCK = registerBlock
             ("pagan_t4_block", () -> new
-                    Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
+                    Block(BlockBehaviour.Properties.copy(Blocks.GOLD_BLOCK)
+                    .sound(SoundType.METAL)));
+
+    public static final RegistryObject<Block> PAGAN_T4_BLOCK_COMPRESSED = registerBlock
+            ("pagan_t4_block_compressed", () -> new
+                    Block(BlockBehaviour.Properties.copy(Blocks.GOLD_BLOCK)
                     .sound(SoundType.METAL)));
 
     public static final RegistryObject<Block> PAGAN_T5_BLOCK = registerBlock

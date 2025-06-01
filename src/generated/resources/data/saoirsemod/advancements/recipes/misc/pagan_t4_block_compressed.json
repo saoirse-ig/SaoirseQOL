@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_pagan_t4_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "saoirsemod:pagan_t4_block"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "saoirsemod:pagan_t4_block_compressed"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_pagan_t4_block",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "saoirsemod:pagan_t4_block_compressed"
+    ]
+  },
+  "sends_telemetry_event": false
+}

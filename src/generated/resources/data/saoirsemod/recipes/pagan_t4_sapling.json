@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "$": {
+      "item": "saoirsemod:pagan_t4_block_compressed"
+    },
+    "3": {
+      "item": "saoirsemod:pagan_t3_sapling"
+    }
+  },
+  "pattern": [
+    "$$$",
+    "$3$",
+    "$$$"
+  ],
+  "result": {
+    "item": "saoirsemod:pagan_t4_sapling"
+  },
+  "show_notification": true
+}
