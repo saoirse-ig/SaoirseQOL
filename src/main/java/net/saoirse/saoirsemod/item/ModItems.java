@@ -91,7 +91,7 @@ public class ModItems {
 
     public static final RegistryObject<Item> PAGAN_T1_SWORD =
             ITEMS.register("pagan_t1_sword",
-                    () -> new SwordItem(ModToolTiers.T1, 3, -1.6f, new Item.Properties()));
+                    () -> new SwordItem(ModToolTiers.T1, 3, -2.4f, new Item.Properties()));
     public static final RegistryObject<Item> PAGAN_T1_PICKAXE =
             ITEMS.register("pagan_t1_pickaxe",
                     () -> new PickaxeItem(ModToolTiers.T1, 1, -2.8f, new Item.Properties()));
@@ -112,10 +112,10 @@ public class ModItems {
                     () -> new SwordItem(ModToolTiers.T2, 3, -2.4f, new Item.Properties()));
     public static final RegistryObject<Item> PAGAN_T2_PICKAXE =
             ITEMS.register("pagan_t2_pickaxe",
-                    () -> new PickaxeItem(ModToolTiers.T2, 1, 2.8f, new Item.Properties()));
+                    () -> new PickaxeItem(ModToolTiers.T2, 1, -2.8f, new Item.Properties()));
     public static final RegistryObject<Item> PAGAN_T2_AXE =
             ITEMS.register("pagan_t2_axe",
-                    () -> new AxeItem(ModToolTiers.T2, 6.0f, -3.9f, new Item.Properties()));
+                    () -> new AxeItem(ModToolTiers.T2, 6.0f, -3.1f, new Item.Properties()));
     public static final RegistryObject<Item> PAGAN_T2_SHOVEL =
             ITEMS.register("pagan_t2_shovel",
                     () -> new ShovelItem(ModToolTiers.T2, 1.5f, -3.0f, new Item.Properties()));
@@ -128,57 +128,57 @@ public class ModItems {
 
     public static final RegistryObject<Item> PAGAN_T3_SWORD =
             ITEMS.register("pagan_t3_sword",
-                    () -> new SwordItem(ModToolTiers.T3, 0, 0f, new Item.Properties()));
+                    () -> new SwordItem(ModToolTiers.T3, 3, -2.4f, new Item.Properties()));
     public static final RegistryObject<Item> PAGAN_T3_PICKAXE =
             ITEMS.register("pagan_t3_pickaxe",
-                    () -> new PickaxeItem(ModToolTiers.T3, 0, 0f, new Item.Properties()));
+                    () -> new PickaxeItem(ModToolTiers.T3, 1, -2.8f, new Item.Properties()));
     public static final RegistryObject<Item> PAGAN_T3_AXE =
             ITEMS.register("pagan_t3_axe",
-                    () -> new AxeItem(ModToolTiers.T3, 0, 0f, new Item.Properties()));
+                    () -> new AxeItem(ModToolTiers.T3, 5, -3.0f, new Item.Properties()));
     public static final RegistryObject<Item> PAGAN_T3_SHOVEL =
             ITEMS.register("pagan_t3_shovel",
-                    () -> new ShovelItem(ModToolTiers.T3, 0, 0f, new Item.Properties()));
+                    () -> new ShovelItem(ModToolTiers.T3, 1.5f, -3.0f, new Item.Properties()));
     public static final RegistryObject<Item> PAGAN_T3_HOE =
             ITEMS.register("pagan_t3_hoe",
-                    () -> new HoeItem(ModToolTiers.T3, 0, 0f, new Item.Properties()));
+                    () -> new HoeItem(ModToolTiers.T3, -3, 0f, new Item.Properties()));
 
 
     //T4 TOOLS GOLD
 
     public static final RegistryObject<Item> PAGAN_T4_SWORD =
             ITEMS.register("pagan_t4_sword",
-                    () -> new SwordItem(ModToolTiers.T4, 0, 0f, new Item.Properties()));
+                    () -> new SwordItem(ModToolTiers.T4, 3, -2.4f, new Item.Properties()));
     public static final RegistryObject<Item> PAGAN_T4_PICKAXE =
             ITEMS.register("pagan_t4_pickaxe",
-                    () -> new PickaxeItem(ModToolTiers.T4, 0, 0f, new Item.Properties()));
+                    () -> new PickaxeItem(ModToolTiers.T4, 1, -2.8f, new Item.Properties()));
     public static final RegistryObject<Item> PAGAN_T4_AXE =
             ITEMS.register("pagan_t4_axe",
-                    () -> new AxeItem(ModToolTiers.T4, 0, 0f, new Item.Properties()));
+                    () -> new AxeItem(ModToolTiers.T4, 6, -3.0f, new Item.Properties()));
     public static final RegistryObject<Item> PAGAN_T4_SHOVEL =
             ITEMS.register("pagan_t4_shovel",
-                    () -> new ShovelItem(ModToolTiers.T4, 0, 0f, new Item.Properties()));
+                    () -> new ShovelItem(ModToolTiers.T4, 1.5f, -3.0f, new Item.Properties()));
     public static final RegistryObject<Item> PAGAN_T4_HOE =
             ITEMS.register("pagan_t4_hoe",
-                    () -> new HoeItem(ModToolTiers.T4, 0, 0f, new Item.Properties()));
+                    () -> new HoeItem(ModToolTiers.T4, 0, -3.0f, new Item.Properties()));
 
 
     //T5 TOOLS NETHERITE
 
     public static final RegistryObject<Item> PAGAN_T5_SWORD =
             ITEMS.register("pagan_t5_sword",
-                    () -> new SwordItem(ModToolTiers.T5, 0, 0f, new Item.Properties()));
+                    () -> new SwordItem(ModToolTiers.T5, 3, -2.4f, new Item.Properties()));
     public static final RegistryObject<Item> PAGAN_T5_PICKAXE =
             ITEMS.register("pagan_t5_pickaxe",
-                    () -> new PickaxeItem(ModToolTiers.T5, 0, 0f, new Item.Properties()));
+                    () -> new PickaxeItem(ModToolTiers.T5, 1, -2.8f, new Item.Properties()));
     public static final RegistryObject<Item> PAGAN_T5_AXE =
             ITEMS.register("pagan_t5_axe",
-                    () -> new AxeItem(ModToolTiers.T5, 0, 0f, new Item.Properties()));
+                    () -> new AxeItem(ModToolTiers.T5, 5, -3.0f, new Item.Properties()));
     public static final RegistryObject<Item> PAGAN_T5_SHOVEL =
             ITEMS.register("pagan_t5_shovel",
-                    () -> new ShovelItem(ModToolTiers.T5, 0, 0f, new Item.Properties()));
+                    () -> new ShovelItem(ModToolTiers.T5, 1.5f, -3.0f, new Item.Properties()));
     public static final RegistryObject<Item> PAGAN_T5_HOE =
             ITEMS.register("pagan_t5_hoe",
-                    () -> new HoeItem(ModToolTiers.T5, 0, 0f, new Item.Properties()));
+                    () -> new HoeItem(ModToolTiers.T5, -4, 0f, new Item.Properties()));
 
 
     public static void register(IEventBus eventBus){

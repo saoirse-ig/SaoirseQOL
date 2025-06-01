@@ -32,7 +32,7 @@ public class GrowthTotemBlock extends Block {
     @Override
     public void onPlace(BlockState pState, Level pLevel, BlockPos pPos, BlockState pOldState, boolean pIsMoving) {
         if (!pLevel.isClientSide){
-            pLevel.scheduleTick(pPos, this, 10); //Schedules the first tick in first (1) minute(s)
+            pLevel.scheduleTick(pPos, this, 12000); //Schedules the first tick in first (1) minute(s)
         }
     }
 
@@ -56,7 +56,7 @@ public class GrowthTotemBlock extends Block {
             });
 
             // Schedule next tick (every (10) minute(s)) 12000 ticks
-            pLevel.scheduleTick(pPos, this, 50);
+            pLevel.scheduleTick(pPos, this, 12000);
         }
     }
 }

@@ -127,11 +127,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         // T4 Sapling
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PAGAN_T4_SAPLING.get())
-                .pattern("$$$")
-                .pattern("$3$")
-                .pattern("$$$")
-                .define('$', ModBlocks.PAGAN_T4_BLOCK_COMPRESSED.get())
+                .pattern("$G$")
+                .pattern("G3G")
+                .pattern("$G$")
+                .define('$', ModBlocks.PAGAN_T3_BLOCK.get())
                 .define('3', ModBlocks.PAGAN_T3_SAPLING.get())
+                .define('G', Items.GOLD_BLOCK)
                 .unlockedBy(getHasName(ModBlocks.PAGAN_T3_SAPLING.get()), has(ModBlocks.PAGAN_T3_SAPLING.get()))
                 .save(pWriter);
 
@@ -192,9 +193,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("###")
                 .pattern(" $ ")
                 .pattern(" $ ")
-                .define('#', ModItems.PAGAN_T4_INGOT.get())
+                .define('#', ModBlocks.PAGAN_T4_BLOCK.get())
                 .define('$', Items.STICK)
-                .unlockedBy(getHasName(ModItems.PAGAN_T4_INGOT.get()), has(ModItems.PAGAN_T4_INGOT.get()))
+                .unlockedBy(getHasName(ModBlocks.PAGAN_T4_BLOCK.get()), has(ModBlocks.PAGAN_T4_BLOCK.get()))
                 .save(pWriter);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PAGAN_T5_PICKAXE.get())
@@ -240,9 +241,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern(" # ")
                 .pattern(" # ")
                 .pattern(" $ ")
-                .define('#', ModItems.PAGAN_T4_INGOT.get())
+                .define('#', ModBlocks.PAGAN_T4_BLOCK.get())
                 .define('$', Items.STICK)
-                .unlockedBy(getHasName(ModItems.PAGAN_T4_INGOT.get()), has(ModItems.PAGAN_T4_INGOT.get()))
+                .unlockedBy(getHasName(ModBlocks.PAGAN_T4_BLOCK.get()), has(ModBlocks.PAGAN_T4_BLOCK.get()))
                 .save(pWriter);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PAGAN_T5_SWORD.get())
@@ -288,9 +289,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern(" # ")
                 .pattern(" $ ")
                 .pattern(" $ ")
-                .define('#', ModItems.PAGAN_T4_INGOT.get())
+                .define('#', ModBlocks.PAGAN_T4_BLOCK.get())
                 .define('$', Items.STICK)
-                .unlockedBy(getHasName(ModItems.PAGAN_T4_INGOT.get()), has(ModItems.PAGAN_T4_INGOT.get()))
+                .unlockedBy(getHasName(ModBlocks.PAGAN_T4_BLOCK.get()), has(ModBlocks.PAGAN_T4_BLOCK.get()))
                 .save(pWriter);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PAGAN_T5_SHOVEL.get())
@@ -336,9 +337,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("## ")
                 .pattern("#$ ")
                 .pattern(" $ ")
-                .define('#', ModItems.PAGAN_T4_INGOT.get())
+                .define('#', ModBlocks.PAGAN_T4_BLOCK.get())
                 .define('$', Items.STICK)
-                .unlockedBy(getHasName(ModItems.PAGAN_T4_INGOT.get()), has(ModItems.PAGAN_T4_INGOT.get()))
+                .unlockedBy(getHasName(ModBlocks.PAGAN_T4_BLOCK.get()), has(ModBlocks.PAGAN_T4_BLOCK.get()))
                 .save(pWriter);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PAGAN_T5_AXE.get())
@@ -384,9 +385,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("## ")
                 .pattern(" $ ")
                 .pattern(" $ ")
-                .define('#', ModItems.PAGAN_T4_INGOT.get())
+                .define('#', ModBlocks.PAGAN_T4_BLOCK.get())
                 .define('$', Items.STICK)
-                .unlockedBy(getHasName(ModItems.PAGAN_T4_INGOT.get()), has(ModItems.PAGAN_T4_INGOT.get()))
+                .unlockedBy(getHasName(ModBlocks.PAGAN_T4_BLOCK.get()), has(ModBlocks.PAGAN_T4_BLOCK.get()))
                 .save(pWriter);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PAGAN_T5_HOE.get())
@@ -538,6 +539,19 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('#', ModItems.PAGAN_T5_SCRAP.get())
                 .define('$', Items.NETHERITE_INGOT)
                 .unlockedBy(getHasName(ModItems.PAGAN_T5_SCRAP.get()), has(ModItems.PAGAN_T5_SCRAP.get()))
+                .save(pWriter);
+
+
+        // TOTEMS
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.GROWTH_TOTEM_BLOCK.get())
+                .pattern("S#S")
+                .pattern("#1#")
+                .pattern("S#S")
+                .define('#', ModItems.PAGAN_T3_INGOT.get())
+                .define('S', ModItems.PAGAN_DUST.get())
+                .define('1', ModBlocks.PAGAN_T1_BLOCK.get())
+                .unlockedBy(getHasName(ModItems.PAGAN_T3_INGOT.get()), has(ModItems.PAGAN_T3_INGOT.get()))
                 .save(pWriter);
 
         //SHAPELESS CRAFTING

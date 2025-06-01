@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_pagan_t4_ingot": {
+    "has_pagan_t4_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "saoirsemod:pagan_t4_ingot"
+              "saoirsemod:pagan_t4_block"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_pagan_t4_ingot",
+      "has_pagan_t4_block",
       "has_the_recipe"
     ]
   ],

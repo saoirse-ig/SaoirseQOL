@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_pagan_t4_block": {
+    "has_pagan_t3_ingot": {
       "conditions": {
         "items": [
           {
             "items": [
-              "saoirsemod:pagan_t4_block"
+              "saoirsemod:pagan_t3_ingot"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "saoirsemod:pagan_t4_pickaxe"
+        "recipe": "saoirsemod:growth_totem_block"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_pagan_t4_block",
+      "has_pagan_t3_ingot",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "saoirsemod:pagan_t4_pickaxe"
+      "saoirsemod:growth_totem_block"
     ]
   },
   "sends_telemetry_event": false
