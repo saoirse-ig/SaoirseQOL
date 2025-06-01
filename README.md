@@ -35,7 +35,8 @@ they can be collected from basic grass just like other seeds and can then be pla
 and farmed for Sidhe Ash which is needed to craft most pagan items and the first sapling; Combine any sapling and one Sidhe Ash for the very first tier of sapling, the tiers in the mod as of now are:
 
 
-![alt text](https://github.com/saoirse-ig/TDC/blob/master/src/main/resources/assets/saoirsemod/textures/item/pagan_t1_ingot_unused.png) ### Tier One: Féth Fíada
+### Tier One: Féth Fíada
+![alt text](https://github.com/saoirse-ig/TDC/blob/master/src/main/resources/assets/saoirsemod/textures/item/pagan_t1_ingot_unused.png)
 
 A magical mist or veil in Irish lore that conceals and misleads, making people or places appear as something else (like deer or shadows). Used by druids and later saints (like St. Patrick) to escape danger. This is the same tier as stone
 
