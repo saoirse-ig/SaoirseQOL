@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "saoirsemod:block/stripped_pagan_t4_log_top",
-    "side": "saoirsemod:block/stripped_pagan_t4_log"
-  }
-}
