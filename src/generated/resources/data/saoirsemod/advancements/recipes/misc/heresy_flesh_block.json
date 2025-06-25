@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_riddlebox": {
+    "has_pagan_dust": {
       "conditions": {
         "items": [
           {
             "items": [
-              "saoirsemod:riddlebox"
+              "saoirsemod:pagan_dust"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "saoirsemod:jokereye"
+        "recipe": "saoirsemod:heresy_flesh_block"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_riddlebox",
+      "has_pagan_dust",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "saoirsemod:jokereye"
+      "saoirsemod:heresy_flesh_block"
     ]
   },
   "sends_telemetry_event": false

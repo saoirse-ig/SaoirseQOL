@@ -26,8 +26,20 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels(){
-        blockWithItem(ModBlocks.RIDDLE_BOX);
+        //blockWithItem(ModBlocks.RIDDLE_BOX);
 
+
+// HERESY BLOCKS
+
+        blockWithItem(ModBlocks.HERESY_FLESH_BLOCK);
+
+
+
+// PAGAN BLOCKS
+
+// MISC PAGAN BLOCKS
+
+        blockWithItem(ModBlocks.PAGAN_DUST_BLOCK);
 
 // INGOT BLOCKS
 

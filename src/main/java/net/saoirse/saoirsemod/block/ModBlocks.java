@@ -29,12 +29,35 @@ public class ModBlocks {
 
     //holds properties of IRON_BLOCK except for sound,
     // which is copying COPPER_BLOCK
+
+    /*
     public static final RegistryObject<Block> RIDDLE_BOX = registerBlock
             ("riddlebox", () -> new
                     Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
                     .sound(SoundType.COPPER)));
+    */
 
 
+
+    // HERETIC BLOCKS
+
+    public static final RegistryObject<Block> HERESY_FLESH_BLOCK = registerBlock
+            ("heresy_flesh_block", () -> new
+                    Block(BlockBehaviour.Properties.copy(Blocks.MUD)));
+
+
+
+
+
+
+    // PAGAN BLOCKS
+
+    // MISC PAGAN BLOCKS
+
+    public static final RegistryObject<Block> PAGAN_DUST_BLOCK = registerBlock
+            ("pagan_dust_block", () -> new
+                    Block(BlockBehaviour.Properties.copy(Blocks.STONE)
+                    .sound(SoundType.STONE)));
 
     // INGOT BLOCKS
 

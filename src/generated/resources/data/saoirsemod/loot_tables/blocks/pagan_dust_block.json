@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "saoirsemod:riddlebox"
+          "name": "saoirsemod:pagan_dust_block"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "saoirsemod:blocks/riddlebox"
+  "random_sequence": "saoirsemod:blocks/pagan_dust_block"
 }

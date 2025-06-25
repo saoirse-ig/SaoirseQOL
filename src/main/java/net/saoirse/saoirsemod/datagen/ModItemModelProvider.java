@@ -21,7 +21,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
 
-        simpleItem(ModItems.JOKER_EYE);
+        //simpleItem(ModItems.JOKER_EYE);
         simpleItem(ModItems.PAGAN_SEEDS);
         simpleItem(ModItems.PAGAN_CROP_YIELD);
         simpleItem(ModItems.PAGAN_DUST);

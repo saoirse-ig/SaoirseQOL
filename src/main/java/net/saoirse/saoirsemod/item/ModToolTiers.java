@@ -35,7 +35,7 @@ public class ModToolTiers {
 
     // T3 / DIAMOND
     public static final Tier T3 = TierSortingRegistry.registerTier(
-            new ForgeTier(3, 2081, 8.0f,
+            new ForgeTier(3, 1170, 8.0f,
                     3.0f, 19,
                     ModTags.Blocks.NEEDS_T3_TOOL, () ->
                     Ingredient.of(ModItems.PAGAN_T3_INGOT.get())),
@@ -55,7 +55,7 @@ public class ModToolTiers {
 
     // T5 / NETHERITE
     public static final Tier T5 = TierSortingRegistry.registerTier(
-            new ForgeTier(4, 2708, 9.0f,
+            new ForgeTier(4, 1524, 9.0f,
                     4.0f, 19,
                     ModTags.Blocks.NEEDS_T5_TOOL, () ->
                     Ingredient.of(ModItems.PAGAN_T5_INGOT.get())),

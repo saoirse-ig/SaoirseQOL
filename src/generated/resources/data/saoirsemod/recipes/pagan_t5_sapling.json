@@ -5,6 +5,9 @@
     "4": {
       "item": "saoirsemod:pagan_t4_sapling"
     },
+    "B": {
+      "item": "minecraft:brown_mushroom"
+    },
     "C": {
       "item": "saoirsemod:pagan_t4_block_compressed"
     },
@@ -17,7 +20,7 @@
   },
   "pattern": [
     "CRN",
-    "R4R",
+    "B4B",
     "NRC"
   ],
   "result": {

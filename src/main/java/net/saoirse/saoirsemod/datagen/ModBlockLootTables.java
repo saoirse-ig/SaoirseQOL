@@ -23,8 +23,19 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     @Override
     protected void generate() {
 
-        this.dropSelf(ModBlocks.RIDDLE_BOX.get());
+        //this.dropSelf(ModBlocks.RIDDLE_BOX.get());
 
+        // HERESY BLOCKS
+
+        this.dropSelf(ModBlocks.HERESY_FLESH_BLOCK.get());
+
+
+
+        // PAGAN BLOCKS
+
+        // PAGAN MISC
+
+        this.dropSelf(ModBlocks.PAGAN_DUST_BLOCK.get());
 
 
         this.dropSelf(ModBlocks.PAGAN_T1_SAPLING.get());
@@ -74,6 +85,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
 
 
+        // PAGAN LEAVES
+
         this.add(ModBlocks.PAGAN_T1_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.PAGAN_T1_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
@@ -89,6 +102,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.PAGAN_T5_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.PAGAN_T5_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
+
+        // PAGAN TOTEMS
 
         this.dropOther(ModBlocks.GROWTH_TOTEM_BLOCK.get(), ModItems.PAGAN_DUST.get());
 

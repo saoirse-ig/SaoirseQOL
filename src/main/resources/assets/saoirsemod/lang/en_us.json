@@ -1,8 +1,7 @@
 {
 
-  "block.saoirsemod.riddlebox": "Riddle Box",
-  "item.saoirsemod.joker_eye": "Joker Eye",
-
+  "block.saoirsemod.heresy_flesh_block": "Flesh Block",
+  "block.saoirsemod.pagan_dust_block": "Sidhe Ash Block",
   "item.saoirsemod.pagan_seeds": "Seeds na Beatha",
   "item.saoirsemod.pagan_dust": "Sidhe Ash",
   "item.saoirsemod.pagan_crop_yield": "Panicle na Beatha",
@@ -107,5 +106,6 @@
 
 
   "creativetab.tdc_tab": "TDC - Main",
+  "creativetab.tdc_heresy_tab": "TDC - Heresy",
   "creativetab.tdc_tools_tab": "TDC - Tools"
 }

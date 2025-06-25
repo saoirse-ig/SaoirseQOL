@@ -3,19 +3,19 @@
   "category": "misc",
   "key": {
     "#": {
-      "item": "saoirsemod:pagan_t5_scrap"
+      "item": "minecraft:rotten_flesh"
     },
-    "$": {
-      "item": "saoirsemod:pagan_t4_block"
+    "X": {
+      "item": "saoirsemod:pagan_dust"
     }
   },
   "pattern": [
     "###",
-    "#$$",
-    "$$ "
+    "#X#",
+    "###"
   ],
   "result": {
-    "item": "saoirsemod:pagan_t5_ingot"
+    "item": "saoirsemod:heresy_flesh_block"
   },
   "show_notification": true
 }

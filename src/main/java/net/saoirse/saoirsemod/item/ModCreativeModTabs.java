@@ -15,6 +15,15 @@ public class ModCreativeModTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, TheDarkCarnival.MOD_ID);
 
 
+    public static final RegistryObject<CreativeModeTab> TDC_HERESY_TAB = CREATIVE_MODE_TABS.register("tdc_heresy_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.HERESY_FLESH_BLOCK.get()))
+                    .title(Component.translatable("creativetab.tdc_tools_tab"))
+                    .displayItems((pParameters, pOutput) -> {
+
+                        pOutput.accept(ModBlocks.HERESY_FLESH_BLOCK.get());
+
+                    }).build());
+
     public static final RegistryObject<CreativeModeTab> TDC_TOOLS_TAB = CREATIVE_MODE_TABS.register("tdc_tools_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.PAGAN_T5_SWORD.get()))
                     .title(Component.translatable("creativetab.tdc_tools_tab"))
@@ -59,12 +68,14 @@ public class ModCreativeModTabs {
                     .displayItems((pParameters, pOutput) -> {
 
                         //ITEMS
-                        pOutput.accept(ModItems.JOKER_EYE.get());
+                        //pOutput.accept(ModItems.JOKER_EYE.get());
+
+
                         pOutput.accept(ModItems.PAGAN_SEEDS.get());
                         pOutput.accept(ModItems.PAGAN_DUST.get());
                         pOutput.accept(ModItems.PAGAN_CROP_YIELD.get());
                         pOutput.accept(ModItems.PAGAN_T3_CRAFTING_ITEM.get());
-                        pOutput.accept(ModItems.PAGAN_ORB.get());
+                        //pOutput.accept(ModItems.PAGAN_ORB.get());
 
                         pOutput.accept(ModItems.PAGAN_T1_INGOT.get());
                         pOutput.accept(ModItems.PAGAN_T2_INGOT.get());
@@ -81,7 +92,9 @@ public class ModCreativeModTabs {
 
 
                         //BLOCKS
-                        pOutput.accept(ModBlocks.RIDDLE_BOX.get());
+                        //pOutput.accept(ModBlocks.RIDDLE_BOX.get());
+
+                        pOutput.accept(ModBlocks.PAGAN_DUST_BLOCK.get());
 
                         pOutput.accept(ModBlocks.PAGAN_T1_LOG.get());
                         pOutput.accept(ModBlocks.PAGAN_T2_LOG.get());

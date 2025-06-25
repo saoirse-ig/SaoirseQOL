@@ -55,7 +55,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> pWriter) {
 
-
+/*
 
         //TEMPLATE
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.RIDDLE_BOX.get())
@@ -72,25 +72,41 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModBlocks.RIDDLE_BOX.get()), has(ModBlocks.RIDDLE_BOX.get()))
                 .save(pWriter);
 
-
+*/
 
         //SHAPED CRAFTING
 
         // T3 Sapling Crafting Item
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PAGAN_T3_CRAFTING_ITEM.get())
-                .pattern("OSB")
-                .pattern("J$A")
-                .pattern("DMC")
+                .pattern("OCB")
+                .pattern("J$D")
+                .pattern("XMX")
                 .define('$', ModItems.PAGAN_DUST.get())
                 .define('O', Blocks.OAK_SAPLING)
-                .define('S', Blocks.SPRUCE_SAPLING)
+                .define('C', Blocks.CHERRY_SAPLING)
                 .define('B', Blocks.BIRCH_SAPLING)
                 .define('J', Blocks.JUNGLE_SAPLING)
                 .define('D', Blocks.DARK_OAK_SAPLING)
-                .define('M', Blocks.BAMBOO)
-                .define('A', Blocks.ACACIA_SAPLING)
-                .define('C', Blocks.CHERRY_SAPLING)
+                .define('X', ModBlocks.PAGAN_DUST_BLOCK.get())
+                .define('M', Items.BUNDLE)
                 .unlockedBy(getHasName(ModBlocks.PAGAN_T2_SAPLING.get()), has(ModBlocks.PAGAN_T2_SAPLING.get()))
+                .save(pWriter);
+
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PAGAN_DUST_BLOCK.get())
+                .pattern("##")
+                .pattern("##")
+                .define('#', ModItems.PAGAN_DUST.get())
+                .unlockedBy(getHasName(ModItems.PAGAN_DUST.get()), has(ModItems.PAGAN_DUST.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.HERESY_FLESH_BLOCK.get())
+                .pattern("###")
+                .pattern("#X#")
+                .pattern("###")
+                .define('#', Items.ROTTEN_FLESH)
+                .define('X', ModItems.PAGAN_DUST.get())
+                .unlockedBy(getHasName(ModItems.PAGAN_DUST.get()), has(ModItems.PAGAN_DUST.get()))
                 .save(pWriter);
 
 
@@ -109,7 +125,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern(" $ ")
                 .define('$', ModItems.PAGAN_DUST.get())
                 .define('1', ModBlocks.PAGAN_T1_SAPLING.get())
-                .define('R', Items.ROTTEN_FLESH)
+                .define('R', ModBlocks.HERESY_FLESH_BLOCK.get())
                 .define('S', Items.SPIDER_EYE)
                 .define('B', Items.BONE_BLOCK)
                 .unlockedBy(getHasName(ModBlocks.PAGAN_T1_SAPLING.get()), has(ModBlocks.PAGAN_T1_SAPLING.get()))
@@ -139,12 +155,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         // T5 Sapling
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PAGAN_T5_SAPLING.get())
                 .pattern("CRN")
-                .pattern("R4R")
+                .pattern("B4B")
                 .pattern("NRC")
                 .define('C', ModBlocks.PAGAN_T4_BLOCK_COMPRESSED.get())
                 .define('4', ModBlocks.PAGAN_T4_SAPLING.get())
                 .define('N', Blocks.NETHERITE_BLOCK)
                 .define('R', Blocks.RED_MUSHROOM)
+                .define('B', Blocks.BROWN_MUSHROOM)
                 .unlockedBy(getHasName(ModBlocks.PAGAN_T4_SAPLING.get()), has(ModBlocks.PAGAN_T4_SAPLING.get()))
                 .save(pWriter);
 
@@ -537,7 +554,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("#$$")
                 .pattern("$$ ")
                 .define('#', ModItems.PAGAN_T5_SCRAP.get())
-                .define('$', Items.NETHERITE_INGOT)
+                .define('$', ModBlocks.PAGAN_T4_BLOCK.get())
                 .unlockedBy(getHasName(ModItems.PAGAN_T5_SCRAP.get()), has(ModItems.PAGAN_T5_SCRAP.get()))
                 .save(pWriter);
 
@@ -593,17 +610,17 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         // SMELTING
 
-        oreSmelting(pWriter, PAGAN_T1_SMELTABLES, RecipeCategory.MISC, ModItems.PAGAN_T1_INGOT.get(), 0.15f, 400, "t1");
-        oreSmelting(pWriter, PAGAN_T2_SMELTABLES, RecipeCategory.MISC, ModItems.PAGAN_T2_INGOT.get(), 0.25f, 512, "t2");
-        oreSmelting(pWriter, PAGAN_T3_SMELTABLES, RecipeCategory.MISC, ModItems.PAGAN_T3_INGOT.get(), 0.30f, 1024, "t3");
-        oreSmelting(pWriter, PAGAN_T4_SMELTABLES, RecipeCategory.MISC, ModItems.PAGAN_T4_INGOT.get(), 0.45f, 1536, "t4");
-        oreSmelting(pWriter, PAGAN_T5_SMELTABLES, RecipeCategory.MISC, ModItems.PAGAN_T5_SCRAP.get(), 0.50f, 2048, "t5");
+        oreSmelting(pWriter, PAGAN_T1_SMELTABLES, RecipeCategory.MISC, ModItems.PAGAN_T1_INGOT.get(), 0.15f, 810, "t1");
+        oreSmelting(pWriter, PAGAN_T2_SMELTABLES, RecipeCategory.MISC, ModItems.PAGAN_T2_INGOT.get(), 0.25f, 1080, "t2");
+        oreSmelting(pWriter, PAGAN_T3_SMELTABLES, RecipeCategory.MISC, ModItems.PAGAN_T3_INGOT.get(), 0.30f, 1440, "t3");
+        oreSmelting(pWriter, PAGAN_T4_SMELTABLES, RecipeCategory.MISC, ModItems.PAGAN_T4_INGOT.get(), 0.45f, 1920, "t4");
+        oreSmelting(pWriter, PAGAN_T5_SMELTABLES, RecipeCategory.MISC, ModItems.PAGAN_T5_SCRAP.get(), 0.50f, 2560, "t5");
 
-        oreBlasting(pWriter, PAGAN_T1_SMELTABLES, RecipeCategory.MISC, ModItems.PAGAN_T1_INGOT.get(), 0.15f, 400, "t1");
-        oreBlasting(pWriter, PAGAN_T2_SMELTABLES, RecipeCategory.MISC, ModItems.PAGAN_T2_INGOT.get(), 0.25f, 512, "t2");
-        oreBlasting(pWriter, PAGAN_T3_SMELTABLES, RecipeCategory.MISC, ModItems.PAGAN_T3_INGOT.get(), 0.30f, 1024, "t3");
-        oreBlasting(pWriter, PAGAN_T4_SMELTABLES, RecipeCategory.MISC, ModItems.PAGAN_T4_INGOT.get(), 0.45f, 1536, "t4");
-        oreBlasting(pWriter, PAGAN_T5_SMELTABLES, RecipeCategory.MISC, ModItems.PAGAN_T5_SCRAP.get(), 0.50f, 2048, "t5");
+        oreBlasting(pWriter, PAGAN_T1_SMELTABLES, RecipeCategory.MISC, ModItems.PAGAN_T1_INGOT.get(), 0.15f, 607, "t1");
+        oreBlasting(pWriter, PAGAN_T2_SMELTABLES, RecipeCategory.MISC, ModItems.PAGAN_T2_INGOT.get(), 0.25f, 810, "t2");
+        oreBlasting(pWriter, PAGAN_T3_SMELTABLES, RecipeCategory.MISC, ModItems.PAGAN_T3_INGOT.get(), 0.30f, 1080, "t3");
+        oreBlasting(pWriter, PAGAN_T4_SMELTABLES, RecipeCategory.MISC, ModItems.PAGAN_T4_INGOT.get(), 0.45f, 1440, "t4");
+        oreBlasting(pWriter, PAGAN_T5_SMELTABLES, RecipeCategory.MISC, ModItems.PAGAN_T5_SCRAP.get(), 0.50f, 1920, "t5");
         
         
 

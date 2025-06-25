@@ -14,9 +14,23 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, TheDarkCarnival.MOD_ID);
 
+    /*
     public static final RegistryObject<Item> JOKER_EYE =
             ITEMS.register("jokereye",
             () -> new Item(new Item.Properties()));
+    */
+
+    // HERESY ITEMS
+
+    public static final RegistryObject<Item> heresy_ =
+            ITEMS.register("heresy_",
+                    () -> new Item(new Item.Properties()));
+
+
+
+
+
+    // PAGAN ITEMS
 
     public static final RegistryObject<Item> PAGAN_CROP_YIELD =
             ITEMS.register("pagan_crop_yield",

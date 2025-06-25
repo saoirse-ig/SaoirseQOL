@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "saoirsemod:block/riddlebox"
+    "all": "saoirsemod:block/heresy_flesh_block"
   }
 }
