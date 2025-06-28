@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:iron_nugget"
+  },
+  "base": {
+    "item": "minecraft:leather_leggings"
+  },
+  "result": {
+    "item": "minecraft:chainmail_leggings"
+  },
+  "template": {
+    "item": "saoirseqol:leather_to_chainmail_smithing_template"
+  }
+}

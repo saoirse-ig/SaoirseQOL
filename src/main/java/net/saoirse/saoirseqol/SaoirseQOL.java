@@ -12,7 +12,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.saoirse.saoirseqol.block.ModBlocks;
-import net.saoirse.saoirseqol.item.ModCreativeModTabs;
+import net.saoirse.saoirseqol.item.ModCreativeModeTabs;
 import net.saoirse.saoirseqol.item.ModItems;
 import net.saoirse.saoirseqol.loot.ModLootModifiers;
 import org.slf4j.Logger;
@@ -30,7 +30,7 @@ public class SaoirseQOL
     {
         IEventBus modEventBus = context.getModEventBus();
 
-        ModCreativeModTabs.register(modEventBus);
+        ModCreativeModeTabs.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModItems.register(modEventBus);
         ModLootModifiers.register(modEventBus);
@@ -52,7 +52,7 @@ public class SaoirseQOL
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event)
     {
-        LOGGER.info("HELLO from server starting");
+        LOGGER.info("Hello world! - SaoirseQOL");
     }
 
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)

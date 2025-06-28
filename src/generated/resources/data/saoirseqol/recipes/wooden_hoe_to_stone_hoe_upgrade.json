@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:stone"
+  },
+  "base": {
+    "item": "minecraft:wooden_hoe"
+  },
+  "result": {
+    "item": "minecraft:stone_hoe"
+  },
+  "template": {
+    "item": "saoirseqol:wood_to_stone_smithing_template"
+  }
+}

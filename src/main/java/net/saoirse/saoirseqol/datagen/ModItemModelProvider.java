@@ -21,6 +21,11 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
 
+        simpleItem(ModItems.WOOD_TO_STONE_SMITHING_TEMPLATE);
+        simpleItem(ModItems.LEATHER_TO_CHAINMAIL_SMITHING_TEMPLATE);
+        simpleItem(ModItems.STONE_GOLD_CHAINMAIL_TO_IRON_SMITHING_TEMPLATE);
+        simpleItem(ModItems.IRON_TO_DIAMOND_SMITHING_TEMPLATE);
+
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
@@ -40,4 +45,5 @@ public class ModItemModelProvider extends ItemModelProvider {
                 ResourceLocation.tryParse("item/generated")).texture("layer0",
                 ResourceLocation.tryBuild(SaoirseQOL.MOD_ID, "block/" + item.getId().getPath()));
     }
+
 }

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:stone"
+  },
+  "base": {
+    "item": "minecraft:wooden_sword"
+  },
+  "result": {
+    "item": "minecraft:stone_sword"
+  },
+  "template": {
+    "item": "saoirseqol:wood_to_stone_smithing_template"
+  }
+}

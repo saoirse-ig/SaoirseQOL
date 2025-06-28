@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:diamond"
+  },
+  "base": {
+    "item": "minecraft:iron_hoe"
+  },
+  "result": {
+    "item": "minecraft:diamond"
+  },
+  "template": {
+    "item": "saoirseqol:iron_to_diamond_smithing_template"
+  }
+}
