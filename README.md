@@ -1,5 +1,5 @@
 This is a mod to fix or create crafting recipes that I've found annoying playing minecraft, so I figured the public could enjoy it too
-
+<br/>
 
 
 * Smithing templates to upgrade leather to chainmail -> chainmail to iron -> iron to diamond
