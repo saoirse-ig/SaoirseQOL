@@ -1,5 +1,7 @@
 This is a mod to fix or create crafting recipes that I've found annoying playing minecraft, so I figured the public could enjoy it too
 
+
+
 * Smithing templates to upgrade leather to chainmail -> chainmail to iron -> iron to diamond
 * Smithing tmeplates to upgrade wood to stone -> stone to iron -> iron to diamond
 * Rotten flesh is smeltable and smokeable to make leather
