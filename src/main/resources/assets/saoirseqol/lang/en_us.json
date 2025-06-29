@@ -1,0 +1,10 @@
+{
+  "item.saoirseqol.diamond_nugget": "Diamond Nugget",
+
+  "item.saoirseqol.wood_to_stone_smithing_template": "Stone Smithing Template",
+  "item.saoirseqol.leather_to_chainmail_smithing_template": "Chainmail Smithing Template",
+  "item.saoirseqol.stone_gold_chainmail_to_iron_smithing_template": "Iron Smithing Template",
+  "item.saoirseqol.iron_to_diamond_smithing_template": "Diamond Smithing Template",
+
+  "creativetab.saoirseqol_tab": "Saoirse's QOL"
+}

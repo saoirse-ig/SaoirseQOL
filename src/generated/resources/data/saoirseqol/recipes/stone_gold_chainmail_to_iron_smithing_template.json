@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:iron_ingot"
+    },
+    "$": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "pattern": [
+    "#$#",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "saoirseqol:stone_gold_chainmail_to_iron_smithing_template"
+  },
+  "show_notification": true
+}

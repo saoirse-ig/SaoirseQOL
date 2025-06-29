@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_stone_gold_chainmail_to_iron_smithing_template": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "saoirseqol:stone_gold_chainmail_to_iron_smithing_template"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "saoirseqol:stone_gold_chainmail_to_iron_smithing_template"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_stone_gold_chainmail_to_iron_smithing_template",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "saoirseqol:stone_gold_chainmail_to_iron_smithing_template"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "saoirseqol:diamond_nugget"
+    },
+    "$": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    "#$#",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "saoirseqol:iron_to_diamond_smithing_template"
+  },
+  "show_notification": true
+}

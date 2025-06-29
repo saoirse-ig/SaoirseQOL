@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "saoirseqol:item/wood_to_stone_smithing_template"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 400,
+  "experience": 0.15,
+  "group": "diamond_to_diamond_nuggets",
+  "ingredient": {
+    "item": "minecraft:diamond_axe"
+  },
+  "result": "saoirseqol:diamond_nugget"
+}

@@ -4,6 +4,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -27,7 +28,24 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         super(pOutput);
     }
 
-    private static final List<ItemLike> SAOIRSE_QOL_SMELTABLES = List.of(
+    private static final List<ItemLike> SAOIRSE_QOL_SMELTABLES_DIAMOND = List.of(
+
+            Items.DIAMOND_AXE,
+            Items.DIAMOND_HOE,
+            Items.DIAMOND_PICKAXE,
+            Items.DIAMOND_SHOVEL,
+            Items.DIAMOND_SWORD,
+
+            Items.DIAMOND_HELMET,
+            Items.DIAMOND_CHESTPLATE,
+            Items.DIAMOND_LEGGINGS,
+            Items.DIAMOND_BOOTS
+
+    );
+
+    private static final List<ItemLike> SAOIRSE_QOL_SMELTABLES_LEATHER = List.of(
+
+            Items.ROTTEN_FLESH
 
     );
 
@@ -55,6 +73,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 */
 
         //SHAPED CRAFTING
+
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.DIAMOND)
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .define('#', ModItems.DIAMOND_NUGGET.get())
+                .unlockedBy(getHasName(ModItems.DIAMOND_NUGGET.get()), has(ModItems.DIAMOND_NUGGET.get()))
+                .save(pWriter);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.CHAINMAIL_HELMET)
                 .pattern("###")
@@ -86,12 +113,61 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(Items.IRON_NUGGET), has(Items.IRON_NUGGET))
                 .save(pWriter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.WOOD_TO_STONE_SMITHING_TEMPLATE.get())
+                .pattern("#$#")
+                .pattern("###")
+                .pattern("###")
+                .define('$', ItemTags.LOGS)
+                .define('#', Items.STONE)
+                .unlockedBy(
+                        getHasName(ModItems.WOOD_TO_STONE_SMITHING_TEMPLATE.get()),
+                        has(ModItems.WOOD_TO_STONE_SMITHING_TEMPLATE.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.LEATHER_TO_CHAINMAIL_SMITHING_TEMPLATE.get())
+                .pattern("#$#")
+                .pattern("###")
+                .pattern("###")
+                .define('$', Items.LEATHER)
+                .define('#', Items.IRON_NUGGET)
+                .unlockedBy(
+                        getHasName(Items.LEATHER),
+                        has(Items.LEATHER))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.STONE_GOLD_CHAINMAIL_TO_IRON_SMITHING_TEMPLATE.get())
+                .pattern("#$#")
+                .pattern("###")
+                .pattern("###")
+                .define('$', Items.GOLD_INGOT)
+                .define('#', Items.IRON_INGOT)
+                .unlockedBy(
+                        getHasName(ModItems.STONE_GOLD_CHAINMAIL_TO_IRON_SMITHING_TEMPLATE.get()),
+                        has(ModItems.STONE_GOLD_CHAINMAIL_TO_IRON_SMITHING_TEMPLATE.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.IRON_TO_DIAMOND_SMITHING_TEMPLATE.get())
+                .pattern("#$#")
+                .pattern("###")
+                .pattern("###")
+                .define('$', Items.IRON_INGOT)
+                .define('#', ModItems.DIAMOND_NUGGET.get())
+                .unlockedBy(
+                        getHasName(ModItems.IRON_TO_DIAMOND_SMITHING_TEMPLATE.get()),
+                        has(ModItems.IRON_TO_DIAMOND_SMITHING_TEMPLATE.get()))
+                .save(pWriter);
+
         //SHAPELESS CRAFTING
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.LEAD, 1)
                 .requires(Items.STRING)
                 .requires(Items.SLIME_BALL)
                 .unlockedBy(getHasName(Items.SLIME_BALL), has(Items.SLIME_BALL))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.DIAMOND_NUGGET.get(), 9)
+                .requires(Items.DIAMOND)
+                .unlockedBy(getHasName(Items.DIAMOND), has(Items.DIAMOND))
                 .save(pWriter);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.NAME_TAG, 1)
@@ -256,7 +332,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         Ingredient.of(Items.IRON_AXE),
                         Ingredient.of(Items.DIAMOND),
                         RecipeCategory.COMBAT,
-                        Items.DIAMOND)
+                        Items.DIAMOND_AXE)
                 .unlocks("has_diamond", has(Items.DIAMOND))
                 .save(pWriter, ResourceLocation.fromNamespaceAndPath(SaoirseQOL.MOD_ID, "iron_axe_to_diamond_axe_upgrade"));
 
@@ -265,7 +341,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         Ingredient.of(Items.IRON_HOE),
                         Ingredient.of(Items.DIAMOND),
                         RecipeCategory.COMBAT,
-                        Items.DIAMOND)
+                        Items.DIAMOND_HOE)
                 .unlocks("has_diamond", has(Items.DIAMOND))
                 .save(pWriter, ResourceLocation.fromNamespaceAndPath(SaoirseQOL.MOD_ID, "iron_hoe_to_diamond_hoe_upgrade"));
 
@@ -274,7 +350,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         Ingredient.of(Items.IRON_PICKAXE),
                         Ingredient.of(Items.DIAMOND),
                         RecipeCategory.COMBAT,
-                        Items.DIAMOND)
+                        Items.DIAMOND_PICKAXE)
                 .unlocks("has_diamond", has(Items.DIAMOND))
                 .save(pWriter, ResourceLocation.fromNamespaceAndPath(SaoirseQOL.MOD_ID, "iron_pickaxe_to_diamond_pickaxe_upgrade"));
 
@@ -283,7 +359,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         Ingredient.of(Items.IRON_SHOVEL),
                         Ingredient.of(Items.DIAMOND),
                         RecipeCategory.COMBAT,
-                        Items.DIAMOND)
+                        Items.DIAMOND_SHOVEL)
                 .unlocks("has_diamond", has(Items.DIAMOND))
                 .save(pWriter, ResourceLocation.fromNamespaceAndPath(SaoirseQOL.MOD_ID, "iron_shovel_to_diamond_shovel_upgrade"));
 
@@ -292,7 +368,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         Ingredient.of(Items.IRON_SWORD),
                         Ingredient.of(Items.DIAMOND),
                         RecipeCategory.COMBAT,
-                        Items.DIAMOND)
+                        Items.DIAMOND_SWORD)
                 .unlocks("has_diamond", has(Items.DIAMOND))
                 .save(pWriter, ResourceLocation.fromNamespaceAndPath(SaoirseQOL.MOD_ID, "iron_sword_to_diamond_sword_upgrade"));
 
@@ -420,8 +496,25 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         // SMELTING
 
+        oreSmelting(pWriter, SAOIRSE_QOL_SMELTABLES_DIAMOND,
+                RecipeCategory.MISC, ModItems.DIAMOND_NUGGET.get(),
+                0.15f,
+                400,
+                "diamond_to_diamond_nuggets");
 
+        oreSmelting(pWriter,SAOIRSE_QOL_SMELTABLES_LEATHER,
+                RecipeCategory.MISC,
+                Items.LEATHER,
+                0.15f,
+                400,
+                "rotten_flesh_to_leather");
 
+        oreSmoking(pWriter, SAOIRSE_QOL_SMELTABLES_LEATHER,
+                RecipeCategory.MISC,
+                Items.LEATHER,
+                0.15f,
+                200,
+                "rotten_flesh_to_leather");
     }
 
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {
@@ -432,6 +525,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     protected static void oreBlasting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup) {
         oreCooking(pFinishedRecipeConsumer, RecipeSerializer.BLASTING_RECIPE, pIngredients, pCategory, pResult,
                 pExperience, pCookingTime, pGroup, "_from_blasting");
+    }
+
+    protected static void oreSmoking(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup){
+        oreCooking(pFinishedRecipeConsumer, RecipeSerializer.SMOKING_RECIPE, pIngredients, pCategory, pResult, pExperience, pCookingTime, pGroup, "_from_smoking");
     }
 
     protected static void oreCooking(Consumer<FinishedRecipe> pFinishedRecipeConsumer, RecipeSerializer<? extends AbstractCookingRecipe> pCookingSerializer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup, String pRecipeName) {

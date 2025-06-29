@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:stone"
+    },
+    "$": {
+      "tag": "minecraft:logs"
+    }
+  },
+  "pattern": [
+    "#$#",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "saoirseqol:wood_to_stone_smithing_template"
+  },
+  "show_notification": true
+}

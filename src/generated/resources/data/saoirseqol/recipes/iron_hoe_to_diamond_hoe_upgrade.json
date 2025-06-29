@@ -7,7 +7,7 @@
     "item": "minecraft:iron_hoe"
   },
   "result": {
-    "item": "minecraft:diamond"
+    "item": "minecraft:diamond_hoe"
   },
   "template": {
     "item": "saoirseqol:iron_to_diamond_smithing_template"

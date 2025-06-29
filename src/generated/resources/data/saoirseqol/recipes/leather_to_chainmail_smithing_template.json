@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:iron_nugget"
+    },
+    "$": {
+      "item": "minecraft:leather"
+    }
+  },
+  "pattern": [
+    "#$#",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "saoirseqol:leather_to_chainmail_smithing_template"
+  },
+  "show_notification": true
+}

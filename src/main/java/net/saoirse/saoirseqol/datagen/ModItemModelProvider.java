@@ -21,6 +21,8 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
 
+        simpleItem(ModItems.DIAMOND_NUGGET);
+
         simpleItem(ModItems.WOOD_TO_STONE_SMITHING_TEMPLATE);
         simpleItem(ModItems.LEATHER_TO_CHAINMAIL_SMITHING_TEMPLATE);
         simpleItem(ModItems.STONE_GOLD_CHAINMAIL_TO_IRON_SMITHING_TEMPLATE);
@@ -32,6 +34,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         return withExistingParent(item.getId().getPath(),
                 ResourceLocation.tryParse("item/generated")).texture("layer0",
                 ResourceLocation.tryBuild(SaoirseQOL.MOD_ID, "item/" + item.getId().getPath()));
+    }
+
+    private void TemplateItem(RegistryObject<Item> template){
+        String path = template.getId().getPath();
+        withExistingParent(path, mcLoc("item/template_smithing_template"))
+                .texture("layer0", modLoc("item/template/" + path));
     }
 
     private ItemModelBuilder handheldItem(RegistryObject<Item> item){

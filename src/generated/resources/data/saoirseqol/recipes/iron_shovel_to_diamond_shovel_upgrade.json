@@ -7,7 +7,7 @@
     "item": "minecraft:iron_shovel"
   },
   "result": {
-    "item": "minecraft:diamond"
+    "item": "minecraft:diamond_shovel"
   },
   "template": {
     "item": "saoirseqol:iron_to_diamond_smithing_template"
